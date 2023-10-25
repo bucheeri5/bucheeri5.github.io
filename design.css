@@ -1,0 +1,118 @@
+/* Reset default margin and padding for all elements */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+ background-color: #FCF6DE;
+   font-family: Monaco, monospace;
+  margin: 0;
+  padding: 0;
+}
+
+/* Style the header section with a background color and center the text */
+header {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 10px;
+   font-family: Monaco, monospace;
+}
+
+/* Style the navigation menu */
+#menu {
+ text-align: center;
+  background-color: #FF85A3;
+  color: white; /* Text color */
+  padding: 10px;
+  font-family: Monaco, monospace;
+}
+
+footer {
+  text-align: center;
+  background-color: #FF85A3;
+  color: white; /* Text color */
+  padding: 10px;
+  font-family: Monaco, monospace;
+}
+
+#title{
+  text-align: center;
+  padding: 10px;
+  font-family: Copperplate, fantasy;
+    font-size: 30px; /* Text size */
+	color: #2B0631; 
+
+}
+.center-container {
+  text-align: center; /* Center the content horizontally */
+}
+.my-button {
+  display: inline-block;
+  padding: 25px 40px;
+  vertical-align: middle; /* Center the text vertically */
+    display: inline-flex;
+
+  background-color: #D9B5C8; /* Button background color */
+  color: #02658F; /* Text color */
+  border: none; /* Remove the default button border */
+  border-radius: 5px; /* Add rounded corners */
+  cursor: pointer; /* Change cursor on hover */
+  font-size: 25px; /* Text size */
+  text-decoration: none; /* Remove underline for links used as buttons */
+  text-align: center;
+  font-family: Copperplate, fantasy;
+	text-align: center;
+	height:100px;
+  width:120px;
+  margin: 10px; /* Add margins to all sides (top, right, bottom, left) */
+  
+}
+
+
+.my-button:hover {
+  background-color: #FF85A3; /* Change background color on hover */
+
+
+/* Style the main content section */
+main {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+   font-family: Monaco, monospace;
+}
+
+/* Style the headings and paragraphs */
+h1, h2, h3 {
+  color: #333;
+   font-family: Monaco, monospace;
+}
+
+p {
+  line-height: 1.5;
+   font-family: Monaco, monospace;
+   
+/* Style the footer */
+footer {
+  text-align: center;
+  background-color: #FF85A3;
+  color: white; /* Text color */
+  padding: 10px;
+  font-family: Monaco, monospace;
+}
+
+
+/* Style the links in the content */
+a {
+  color: #0078d4;
+  text-decoration: none;
+   font-family: Monaco, monospace;
+}
+
+a:hover {
+  text-decoration: underline;
+}
