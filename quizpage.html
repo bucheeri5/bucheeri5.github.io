@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Quiz</title>
+ <title>E-Health Literacy Quiz</title>
+    <link rel="stylesheet" href="StylingSheets/quiz.css"> <!-- Link to your CSS file -->
+	<script src="Javascript/QuizJava.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Antic+Didone&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Shrikhand&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
+	<script src="https://cdn.jsdelivr.net/npm/confetti-js@0.0.3/dist/index.min.js"></script>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Dosis:wght@200..800&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Dosis:wght@200..800&display=swap" rel="stylesheet">
+
+</head>
+<body>
+<div id="myNav" class="overlay">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <div class="overlay-content">
+        <a href="index.html">Home</a>
+        <a href="ehealthliteracy.html">What is e-Health Literacy?</a>
+        <a href="onlineresources.html">Navigating Resources Online</a>
+        <a href="healthrecords.html">Personal Health Records</a>
+    </div>
+</div>
+
+<!-- Container for the menu icon and the title -->
+<div class="header-container">
+    <!-- Use any element to open/show the overlay navigation menu -->
+    <span onclick="openNav()"><img src="Images/menuicon.svg" alt="Menu" style="width: 30px; height: 30px; cursor: pointer;"></span>
+    <h1>WebWellness</h1>
+</div>
+
+<div class="quiz-container">
+    <h1>E-Health Literacy Quiz</h1>
+    <form id="quizForm">
+        <div class="question">
+            <p>1. Where should you check for credible health information online?</p>
+            <label><input type="radio" name="q1" value="0"> Social media posts</label><br>
+            <label><input type="radio" name="q1" value="1"> Official health organization websites</label><br>
+            <label><input type="radio" name="q1" value="0"> Online forums</label>
+        </div>
+        
+        <div class="question">
+            <p>2. What is important to review when visiting a health website?</p>
+            <label><input type="radio" name="q2" value="0"> Website design</label><br>
+            <label><input type="radio" name="q2" value="1"> Privacy policy</label><br>
+            <label><input type="radio" name="q2" value="0"> Number of advertisements</label>
+        </div>
+        
+        <div class="question">
+            <p>3. Which of the following is a sign of biased health information?</p>
+            <label><input type="radio" name="q3" value="1"> Information promoting a specific product for profit</label><br>
+            <label><input type="radio" name="q3" value="0"> Peer-reviewed research articles</label><br>
+            <label><input type="radio" name="q3" value="0"> Government health guidelines</label>
+        </div>
+   
+        <div class="question">
+            <p>3. Which of the following is a sign of biased health information?</p>
+            <label><input type="radio" name="q3" value="1"> Information promoting a specific product for profit</label><br>
+            <label><input type="radio" name="q3" value="0"> Peer-reviewed research articles</label><br>
+            <label><input type="radio" name="q3" value="0"> Government health guidelines</label>
+        </div>
+
+        <!-- New questions -->
+        <div class="question">
+            <p>4. How often should you verify the currency of health information online?</p>
+            <label><input type="radio" name="q4" value="0"> Once a year</label><br>
+            <label><input type="radio" name="q4" value="1"> Every time you consult it</label><br>
+            <label><input type="radio" name="q4" value="0"> Only if the information seems outdated</label>
+        </div>
+        
+        <div class="question">
+            <p>5. What is a key component of e-health literacy?</p>
+            <label><input type="radio" name="q5" value="1"> Ability to evaluate the reliability of online health information</label><br>
+            <label><input type="radio" name="q5" value="0"> Knowing how to use a search engine</label><br>
+            <label><input type="radio" name="q5" value="0"> Having a social media account</label>
+        </div>
+
+       <!-- Continuing from the last question (5) -->
+        <div class="question">
+            <p>6. How can you communicate securely with your healthcare provider online?</p>
+            <label><input type="radio" name="q6" value="1"> Through a secure patient portal provided by the healthcare provider</label><br>
+            <label><input type="radio" name="q6" value="0"> Via any popular social media platform</label><br>
+            <label><input type="radio" name="q6" value="0"> Through personal email</label>
+        </div>
+        
+        <div class="question">
+            <p>7. What should you consider when choosing a health app?</p>
+            <label><input type="radio" name="q7" value="0"> The number of downloads</label><br>
+            <label><input type="radio" name="q7" value="1"> Privacy policy and data security measures</label><br>
+            <label><input type="radio" name="q7" value="0"> Only the app's user interface</label>
+        </div>
+        
+        <div class="question">
+            <p>8. Which feature indicates that a health information website is secure?</p>
+            <label><input type="radio" name="q8" value="1"> URL starts with HTTPS</label><br>
+            <label><input type="radio" name="q8" value="0"> Presence of numerous pop-up ads</label><br>
+            <label><input type="radio" name="q8" value="0"> Website contains user testimonials</label>
+        </div>
+
+        <button type="button" onclick="calculateScore()">Submit</button>
+    </form>
+    <div id="result"></div>
+
+</div>
+
+</body>
+</html>
