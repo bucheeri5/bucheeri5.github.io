@@ -1,0 +1,281 @@
+/*html{
+background-color:#FBF6F1;
+}*/
+.body{
+	   font-family: "Dosis", sans-serif; font-weight: 400;
+}
+.topheaderpage{
+	background-color:#156669;
+	padding:10px;
+}
+/* The Overlay (background) */
+.overlay {
+    height: 0%;
+    width: 100%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #156669;
+    overflow-x: hidden;
+    transition: 0.5s;
+}
+/* Position the content inside the overlay */
+.overlay-content {
+  position: relative;
+  top: 25%; /* 25% from the top */
+  width: 100%; /* 100% width */
+  text-align: center; /* Centered text/links */
+  margin-top: 30px; /* 30px top margin to avoid conflict with the close button on smaller screens */
+ font-family: "Dosis", sans-serif; font-weight: 400;
+}
+ .header-container h1 {
+            display: flex; /* Use flexbox */
+            align-items: center; /* Center items vertically */
+            justify-content: center; /* Center items horizontally */
+            position: relative; /* Allows absolute positioning inside */
+			  font-family: "Antic Didone", serif;
+			  color:white;
+
+        }		
+		 .header-container img{
+            display: flex; /* Use flexbox */
+            align-items: left; /* Center items vertically */
+            justify-content: left; /* Center items horizontally */
+            position: relative; /* Allows absolute positioning inside */
+			  font-family: "Antic Didone", serif;
+			  color:#156669;
+
+        }
+/* The navigation links inside the overlay */
+.overlay a {
+  padding: 8px;
+  text-decoration: none;
+  font-size: 36px;
+  color: white;
+  display: block; /* Display block instead of inline */
+  transition: 0.3s; /* Transition effects on hover (color) */
+  
+}
+/* When you mouse over the navigation links, change their color */
+.overlay a:hover, .overlay a:focus {
+  color: #f1f1f1;
+}
+/* Position the close button (top right corner) */
+.overlay .closebtn {
+  position: absolute;
+  top: 20px;
+  left: 45px;
+  font-size: 60px;
+}
+@media screen and (max-height: 450px) {
+  .overlay a {font-size: 20px}
+  .overlay .closebtn {
+    font-size: 40px;
+    top: 15px;
+    right: 35px;
+  }
+}
+@media screen and (max-height: 450px) {
+  .overlay a {font-size: 20px}
+  .overlay .closebtn {
+    font-size: 40px;
+    top: 15px;
+    right: 35px;
+  }
+}
+.header {
+  padding: 12rem 4rem; /* Adjusted top/bottom and left/right padding */
+  text-align: center;
+  color: #156669;
+  background-image: url('disable.jpg'); /* Set the background image */
+  background-size: cover; /* Ensure the image covers the whole area */
+  background-position: center; /* Center the background image */
+   font-family: "Dosis", sans-serif; font-weight: 400;
+}
+.header h1 {
+  font-size: 3rem; /* 40px converted to rem */
+  font-family: "Antic Didone", serif;
+}
+@media (max-width: 600px) {
+  .header {
+    padding: 3rem 1rem; /* Reduced padding for smaller screens */
+  }
+  
+  .header h1 {
+    font-size: 2rem; /* Smaller font size for smaller screens */
+  }
+}
+
+.testyourliteracy {
+  border-radius: 4px;
+  border: 2px solid #156669;
+  color: #156669;
+  text-align: center;
+  font-size: 20px;
+  padding: 22px;
+  width: 3;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin-left: 1.25rem; 
+   font-family: "Dosis", sans-serif; font-weight: 400;
+  text-decoration:none;
+}
+.factcards-container {
+  display: flex;
+  justify-content: space-around; /* Adjusts spacing between cards */
+  flex-wrap: wrap; /* Allows cards to wrap in smaller screens */
+
+}
+.factcard {
+  width: 320px; /* Set a specific width for the square shape */
+  height: 300px; /* Set height equal to width to make it square */
+  margin: 10px; /* Adjusts spacing around each card */
+  padding: 20px; /* Maintain padding for spacing */
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column; /* Stack content vertically */
+  justify-content: center; /* Center content vertically */
+  align-items: center; /* Center content horizontally */
+background-color:#F8E4DC;
+   box-shadow: 5px 10px #156669;
+  font-size: 27px;
+ font-family: "Dosis", sans-serif; font-weight: 400;	margin-top: 12px;
+	color:#156669;
+
+}
+.mission h2{
+  font-size: 30px;
+  color:#156669;
+    font-family: "Antic Didone", serif;
+}
+.mission p{
+  color:#156669;
+    font-size: 20px;
+	   font-family: "Dosis", sans-serif; font-weight: 400;
+}
+.mission {
+  padding: 20px; /* some padding */
+  text-align: center; /* center the text */
+}
+.content-block {
+  opacity: 0; /* Start invisible */
+  transform: translateY(20px); /* Start slightly lower */
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out; /* Smooth transition for fading and moving up */
+}
+
+.content-block.visible {
+  opacity: 1; /* Fully visible */
+  transform: translateY(0); /* Move to final position */
+}
+/* General styles for the container */
+.content-block {
+  color: #156669;
+  display: flex;
+  align-items: center; /* Keeps items aligned vertically in the center */
+  justify-content: center; /* Center items horizontally inside the .content-block */
+  margin: 0 auto 2rem; /* Centers the block horizontally and adds space below each row */
+   font-family: "Dosis", sans-serif; font-weight: 400;
+  max-width: 70rem; /* Max width to ensure content does not stretch too wide */
+  font-size:20px;
+}
+
+.text h2 {
+  font-family: "Antic Didone", serif;
+}
+
+/* Targets odd-numbered content blocks to display the picture on the left */
+.content-block:nth-child(odd) .picture {
+  order: 1; /* Image first */
+}
+
+.content-block:nth-child(odd) .text {
+  order: 2; /* Text second */
+  padding-left: 4rem; /* Increased space between the text and the picture */
+}
+
+/* Targets even-numbered content blocks to display the picture on the right */
+.content-block:nth-child(even) {
+  flex-direction: row-reverse; /* Reverses the order, putting the picture on the right */
+}
+
+.content-block:nth-child(even) .text {
+  padding-right: 4rem; /* Increased space between the text and the picture */
+}
+
+/* Style for the picture */
+.picture img {
+  width: 100%; /* Ensures the image scales with its container */
+  max-width: 400px; /* Adjust this value to control the size on larger screens */
+  height: auto; /* Maintains the image aspect ratio */
+  margin: 0 auto; /* Centers the image within its container */
+}
+
+/* Ensuring the text and picture are evenly split */
+.picture, .text {
+  flex: 1;
+}
+
+
+/* Media query for phones */
+@media (max-width: 600px) {
+  .content-block {
+    flex-direction: column; /* Stacks the items vertically */
+    align-items: center; /* Center-align the items for better presentation */
+  }
+
+  .content-block .text, .content-block .picture {
+    padding: 0;
+    text-align: center; /* Ensures text is centered under the image */
+  }
+
+  .picture img {
+    max-width: 100%; /* Image can take up to 100% of its container's width */
+    margin-bottom: 1rem; /* Adds some space between the image and the text below it */
+  }
+}
+
+
+ .button-one { 
+ background: #156669; 
+ border-radius: 999px; 
+ box-sizing: border-box; 
+ color: #FFFFFF; 
+	font-size: 16px; 
+	font-weight: 700; 
+	line-height: 24px; 
+	opacity: 1; outline: 0 solid transparent; 
+ padding: 8px 18px; 
+ width: fit-content; 
+ word-break: break-word; 
+ border: 0; 
+   font-family: "Dosis", sans-serif; font-weight: 400;
+  border-radius: 4px;
+  border: 2px solid #156669;
+}
+footer {
+  text-align: center;
+  padding: 5px;
+  background-color: #156669;
+  color: white;
+   font-family: "Dosis", sans-serif; font-weight: 400;
+}
+
+footer a {
+  color: white;
+  text-decoration: none;
+  display: block;
+  padding: 5px;
+}
+
+/* Media query for screens that are 600px wide or less */
+@media (max-width: 600px) {
+  footer {
+    padding: 20px; /* Increase padding for better touch interaction */
+  }
+
+  footer a {
+    font-size: 2rem; /* Increase font size for better readability */
+    padding: 15px 5px; /* Increase vertical padding */
+  }
+}

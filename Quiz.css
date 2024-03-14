@@ -1,0 +1,111 @@
+body {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+  text-align: center;
+  color: #023047;
+  background-image: url('images/quizbackground.png'); /* Set the background image */
+  background-size: cover; /* Ensure the image covers the whole area */
+  background-position: center; /* Center the background image */
+   font-family: "Dosis", sans-serif; font-weight: 400;
+}
+
+/* The Overlay (background) */
+.overlay {
+    height: 0%;
+    width: 100%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #033047;
+    overflow-x: hidden;
+    transition: 0.5s;
+}
+
+/* Position the content inside the overlay */
+.overlay-content {
+  position: relative;
+  top: 25%; /* 25% from the top */
+  width: 100%; /* 100% width */
+  text-align: center; /* Centered text/links */
+  margin-top: 30px; /* 30px top margin to avoid conflict with the close button on smaller screens */
+}
+ .header-container h1 {
+            display: flex; /* Use flexbox */
+            align-items: center; /* Center items vertically */
+            justify-content: center; /* Center items horizontally */
+            position: relative; /* Allows absolute positioning inside */
+			  font-family: "Antic Didone", serif;
+			  color:#023047;
+
+        }		
+		 .header-container img{
+            display: flex; /* Use flexbox */
+            align-items: left; /* Center items vertically */
+            justify-content: left; /* Center items horizontally */
+            position: relative; /* Allows absolute positioning inside */
+			  font-family: "Antic Didone", serif;
+			  color:#023047;
+
+        }
+/* The navigation links inside the overlay */
+.overlay a {
+  padding: 8px;
+  text-decoration: none;
+  font-size: 36px;
+  color: white;
+  display: block; /* Display block instead of inline */
+  transition: 0.3s; /* Transition effects on hover (color) */
+}
+/* When you mouse over the navigation links, change their color */
+.overlay a:hover, .overlay a:focus {
+  color: #f1f1f1;
+}
+/* Position the close button (top right corner) */
+.overlay .closebtn {
+  position: absolute;
+  top: 20px;
+  left: 45px;
+  font-size: 60px;
+}
+@media screen and (max-height: 450px) {
+  .overlay a {font-size: 20px}
+  .overlay .closebtn {
+    font-size: 40px;
+    top: 15px;
+    right: 35px;
+  }
+}
+@media screen and (max-height: 450px) {
+  .overlay a {font-size: 20px}
+  .overlay .closebtn {
+    font-size: 40px;
+    top: 15px;
+    right: 35px;
+  }
+}
+
+
+.quiz-container {
+    max-width: 600px;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+	background-color:white;
+	   font-family: "Dosis", sans-serif; font-weight: 400;
+
+}
+
+.question p {
+    font-weight: bold;
+}
+
+.question label {
+    margin-left: 10px;
+}
+
+#result p {
+    color: green;
+    font-size: 20px;
+}
