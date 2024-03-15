@@ -183,27 +183,25 @@ background-color:#F8E4DC;
 .text h2 {
   font-family: "Antic Didone", serif;
 }
-
-/* Targets odd-numbered content blocks to display the picture on the left */
+/*
 .content-block:nth-child(odd) .picture {
-  order: 1; /* Image first */
+  order: 1; 
 }
 
 .content-block:nth-child(odd) .text {
-  order: 2; /* Text second */
-  padding-left: 4rem; /* Increased space between the text and the picture */
+  order: 2; 
+  padding-left: 4rem; 
 }
 
-@media screen and (min-width:1000px) {
 .content-block:nth-child(even) {
-  flex-direction: row-reverse; /* Reverses the order, putting the picture on the right */
+  flex-direction: row-reverse; 
 }
 
 .content-block:nth-child(even) .text {
-  padding-right: 4rem; /* Increased space between the text and the picture */
+  padding-right: 4rem; /* Increased space between the text and the picture 
 }
-}
-@media screen and (max-width:800px) {
+*/
+@media screen and (max-width:1000px) {
   .content-block {
     flex-direction: column; /* Stack children vertically */
     padding: 0; /* Adjust padding as needed */
@@ -225,14 +223,13 @@ background-color:#F8E4DC;
   .content-block .text {
     width: 100%; /* Use full width */
     padding: 0 1rem; /* Add some padding on the sides for spacing, adjust as necessary */
+		font-size: 50px; 
+
   }
 
- .button-one {
-    margin-top: 1rem; /* Add some space above the button */
+ .morebutton {
     width: 100%; /* Make the button width responsive */
-    max-width: 250px; /* Set a max-width to prevent the button from becoming too wide on larger screens */
-    padding: 10px 0; /* Adjust button padding for better touch target size */
-    box-sizing: border-box; /* Ensures padding is included in the total width and height */
+    padding: 100px; /* Adjust button padding for better touch target size */
   }
 }
 
@@ -251,31 +248,13 @@ background-color:#F8E4DC;
 }
 
 
-/* Media query for phones */
-@media screen and (max-height: 450px) {
-  .content-block {
-    flex-direction: column; /* Stacks the items vertically */
-    align-items: center; /* Center-align the items for better presentation */
-  }
 
-  .content-block .text, .content-block .picture {
-    padding: 0;
-    text-align: center; /* Ensures text is centered under the image */
-  }
-
-  .picture img {
-    max-width: 100%; /* Image can take up to 100% of its container's width */
-    margin-bottom: 1rem; /* Adds some space between the image and the text below it */
-  }
-}
-
-
- .button-one { 
+ .morebutton { 
  background: #156669; 
  border-radius: 999px; 
  box-sizing: border-box; 
  color: #FFFFFF; 
-	font-size: 16px; 
+	font-size: 30px; 
 	font-weight: 700; 
 	line-height: 24px; 
 	opacity: 1; outline: 0 solid transparent; 
