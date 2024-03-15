@@ -194,7 +194,7 @@ background-color:#F8E4DC;
   padding-left: 4rem; /* Increased space between the text and the picture */
 }
 
-/* Targets even-numbered content blocks to display the picture on the right */
+@media screen and (min-width:1000px) {
 .content-block:nth-child(even) {
   flex-direction: row-reverse; /* Reverses the order, putting the picture on the right */
 }
@@ -202,6 +202,40 @@ background-color:#F8E4DC;
 .content-block:nth-child(even) .text {
   padding-right: 4rem; /* Increased space between the text and the picture */
 }
+}
+@media screen and (max-width:800px) {
+  .content-block {
+    flex-direction: column; /* Stack children vertically */
+    padding: 0; /* Adjust padding as needed */
+  }
+
+  .content-block .picture, 
+  .content-block .text {
+    order: 0; /* Reset any previously set order */
+    padding: 0; /* Reset any previously set padding, adjust as necessary */
+	    flex-direction: column; /* Stack children vertically */
+
+  }
+
+  .content-block .picture {
+    margin-bottom: 1rem; /* Adds some space below the picture, before the text */
+  }
+
+  /* Ensure the text div takes full width for better readability on small screens */
+  .content-block .text {
+    width: 100%; /* Use full width */
+    padding: 0 1rem; /* Add some padding on the sides for spacing, adjust as necessary */
+  }
+
+ .button-one {
+    margin-top: 1rem; /* Add some space above the button */
+    width: 100%; /* Make the button width responsive */
+    max-width: 250px; /* Set a max-width to prevent the button from becoming too wide on larger screens */
+    padding: 10px 0; /* Adjust button padding for better touch target size */
+    box-sizing: border-box; /* Ensures padding is included in the total width and height */
+  }
+}
+
 
 /* Style for the picture */
 .picture img {
