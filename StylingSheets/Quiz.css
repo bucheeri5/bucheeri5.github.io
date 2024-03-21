@@ -1,7 +1,6 @@
 body {
     font-family: Arial, sans-serif;
-    padding: 20px;
-  text-align: center;
+	text-align: center;
   color: #023047;
   background-image: url('images/quizbackground.png'); /* Set the background image */
   background-size: cover; /* Ensure the image covers the whole area */
@@ -9,7 +8,24 @@ body {
    font-family: "Dosis", sans-serif; font-weight: 400;
 }
 
-/* The Overlay (background) */
+.topheaderpage{
+	background-color:#156669;
+	padding:10px;
+	margin-bottom: 10px;
+}
+
+.content {
+  padding: 2px;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+.sticky + .content {
+  padding-top: 60px;
+}
 .overlay {
     height: 0%;
     width: 100%;
@@ -17,51 +33,49 @@ body {
     z-index: 1;
     top: 0;
     left: 0;
-    background-color: #033047;
+    background-color: #156669;
     overflow-x: hidden;
     transition: 0.5s;
 }
-
-/* Position the content inside the overlay */
 .overlay-content {
-  position: relative;
-  top: 25%; /* 25% from the top */
-  width: 100%; /* 100% width */
-  text-align: center; /* Centered text/links */
-  margin-top: 30px; /* 30px top margin to avoid conflict with the close button on smaller screens */
+	position: relative;
+	top: 25%; 
+	width: 100%; 
+	text-align: center; 
+	margin-top: 30px; 
+	font-family: "Dosis", sans-serif; 
+	font-weight: 400;
 }
  .header-container h1 {
-            display: flex; /* Use flexbox */
-            align-items: center; /* Center items vertically */
-            justify-content: center; /* Center items horizontally */
-            position: relative; /* Allows absolute positioning inside */
-			  font-family: "Antic Didone", serif;
-			  color:#023047;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  font-family: "Antic Didone", serif;
+  color: white;
+}
 
-        }		
-		 .header-container img{
-            display: flex; /* Use flexbox */
-            align-items: left; /* Center items vertically */
-            justify-content: left; /* Center items horizontally */
-            position: relative; /* Allows absolute positioning inside */
-			  font-family: "Antic Didone", serif;
-			  color:#023047;
+.header-container img{
+  display: flex;
+  align-items: left;
+  justify-content: left;
+  position: relative;
+  font-family: "Antic Didone", serif;
+  color: #156669;
+}
 
-        }
-/* The navigation links inside the overlay */
 .overlay a {
   padding: 8px;
   text-decoration: none;
   font-size: 36px;
   color: white;
-  display: block; /* Display block instead of inline */
-  transition: 0.3s; /* Transition effects on hover (color) */
+  display: block;
+  transition: 0.3s;
 }
-/* When you mouse over the navigation links, change their color */
+
 .overlay a:hover, .overlay a:focus {
-  color: #f1f1f1;
+  color: blue;
 }
-/* Position the close button (top right corner) */
 .overlay .closebtn {
   position: absolute;
   top: 20px;
@@ -85,16 +99,14 @@ body {
   }
 }
 
-
 .quiz-container {
     max-width: 600px;
     margin: auto;
     padding: 20px;
     border: 1px solid #ddd;
-    border-radius: 5px;
-	background-color:white;
-	   font-family: "Dosis", sans-serif; font-weight: 400;
-
+	background-color:#F8E4DC;
+	font-family: "Dosis", sans-serif; font-weight: 400;
+box-shadow: 5px 10px #156669;
 }
 
 .question p {
@@ -109,3 +121,31 @@ body {
     color: green;
     font-size: 20px;
 }
+footer {
+  text-align: center;
+  padding: 5px;
+  background-color: #156669;
+  color: white;
+  font-family: "Antic Didone", serif;
+  font-size:2rem;
+}
+
+footer a {
+  color: white;
+  text-decoration: none;
+  display: block;
+  padding: 5px;
+}
+
+/* Media query for screens that are 600px wide or less */
+@media (max-width: 600px) {
+  footer {
+    padding: 20px; /* Increase padding for better touch interaction */
+  }
+
+  footer a {
+    font-size: 16px; /* Increase font size for better readability */
+    padding: 15px 5px; /* Increase vertical padding */
+  }
+}
+

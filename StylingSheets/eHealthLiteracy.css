@@ -138,29 +138,11 @@ p{
 .card-container {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
- gap: 1.25rem; /* 20px / 16px = 1.25rem */
 justify-content: center;
 padding: 1.25rem; /* 20px / 16px = 1.25rem */
 	background-color:#B8D2E4;
+	margin:10px;
 }
-@media screen and (max-width:1000px){
-	.card-container {
-	  grid-template-columns: repeat(3, 1fr);
-	}
-}
-
-@media screen and (max-width:800px){
-	.card-container {
-	  grid-template-columns: repeat(2, 1fr);
-	}
-}
-
-@media screen and (max-width:600px){
-	.card-container {
-	  grid-template-columns: repeat(1, 1fr);
-	}
-}
-
 .card img {
   width: 50%; /* Ensure the image covers the full width of the card */
   height: auto; /* Maintain the aspect ratio of the image */
@@ -172,7 +154,7 @@ padding: 1.25rem; /* 20px / 16px = 1.25rem */
 .card {
    box-shadow: 5px 10px #156669;
   overflow: hidden;
-  width: 300px; /* Adjust based on preference */
+  width: 90%; 
   background-color: white;
   margin: 10px;
   transition: transform 0.2s; /* Animation on hover */
@@ -185,13 +167,37 @@ padding: 1.25rem; /* 20px / 16px = 1.25rem */
   transform: scale(1.05); /* Slightly enlarge cards on hover */
 }
 
-
-
 .card p {
   padding: 20px;
   margin: 0; /* Remove default margin */
  font-family: "Dosis", sans-serif; font-weight: 400;
 
+}
+@media screen and (max-width:1000px){
+	.card-container {
+	  grid-template-columns: repeat(3, 1fr);
+	}
+	.card{ 
+	 width: 70%; 
+	}
+}
+
+@media screen and (max-width:800px){
+	.card-container {
+	  grid-template-columns: repeat(2, 1fr);
+	}
+	.card{ 
+	 width: 60%; 
+	}
+}
+
+@media screen and (max-width:600px){
+	.card-container {
+	  grid-template-columns: repeat(1, 1fr);
+	}
+	.card{ 
+	 width: 50%; 
+	}
 }
 
 h2{
