@@ -2,6 +2,8 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Quiz</title>
  <title>E-Health Literacy Quiz</title>
     <link rel="stylesheet" href="StylingSheets/quiz.css"> <!-- Link to your CSS file -->
@@ -20,21 +22,27 @@
 
 </head>
 <body>
+<div class="maincontent">
+<div class="topheaderpage">
 <div id="myNav" class="overlay">
+    <!-- Button to close the overlay navigation -->
     <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <!-- Overlay content -->
     <div class="overlay-content">
         <a href="index.html">Home</a>
         <a href="ehealthliteracy.html">What is e-Health Literacy?</a>
-        <a href="onlineresources.html">Navigating Resources Online</a>
+        <a href="navigatingonlineresources.html">Navigating Resources Online</a>
         <a href="healthrecords.html">Personal Health Records</a>
+				<a href="about.html">About</a>
+
     </div>
 </div>
-
 <!-- Container for the menu icon and the title -->
 <div class="header-container">
     <!-- Use any element to open/show the overlay navigation menu -->
     <span onclick="openNav()"><img src="Images/menuicon.svg" alt="Menu" style="width: 30px; height: 30px; cursor: pointer;"></span>
     <h1>WebWellness</h1>
+</div>
 </div>
 
 <div class="quiz-container">
