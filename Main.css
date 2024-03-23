@@ -176,7 +176,8 @@ a.button:hover span:after {
 .explore{
 	font-family: "Antic Didone", serif;
 	text-align: center;
-	margin-top: 100px;
+	margin-top: 70px;
+	  color:#003049;
 	font-size:2rem;
 }
 
