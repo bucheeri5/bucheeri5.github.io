@@ -24,7 +24,7 @@ body{
 	width: 100%; 
 	text-align: center; 
 	margin-top: 30px; 
-	font-family: "Dosis", sans-serif; 
+	font-family: "IBM Plex Sans", sans-serif;  
 	font-weight: 400;
 }
  .navbarmenu h1 {
@@ -35,7 +35,6 @@ body{
   font-family: "Antic Didone", serif;
   color: white;
 }
-
 .navbarmenu img{
   display: flex;
   align-items: left;
@@ -81,11 +80,11 @@ body{
 }
 
 .header {
-  padding: 12.5rem 13.75rem 13.75rem 1.25rem;
+  padding: 12.5rem ;
   margin: 1.25rem; 
-  text-align: left;
+  text-align: Center;
   color: #003049;
-  background-image: url('Images/Coverpagehome.png'); 
+  background-image: url('Images/pattern.png');
   background-size: cover; 
   background-position: center; 
   font-family: "Antic Didone", serif;
@@ -96,44 +95,24 @@ body{
   font-family: "Antic Didone", serif;
 }
 
-.headertext {
-  margin-left: 4rem; 
-  margin-right: 40rem; 
-  align-items: center; 
-}
-@media screem (max-height: 450px) {
-  .header {
-    padding: 10rem 1rem 2rem 1rem;
-    margin: 0.5rem;
- }
 
-  .header h1 {
-    font-size: 2rem;
-  }
-
-  .headertext {
-    margin: 1rem;
-    margin-right: 1rem;
-  }
-}
 
 a.button {
   border: 2px solid #003049;
   color: #003049;
-   background: #B8D2E4; 
+  background-color: #B8D2E4; 
   text-align: center;
   font-size: 20px;
   padding: 22px;
-  width: 3;
   transition: all 0.5s;
   cursor: pointer;
   margin-left: 1.25rem; 
- box-shadow: 2px 4px #003049;
- font-weight: bold; 
+  box-shadow: 2px 4px #003049;
+  font-weight: bold; 
   margin-left: 4rem; 
-   text-decoration: none;
- border: 0; 
-
+  text-decoration: none;
+  border: 0; 
+  width: fit-content; 
 }
 
 a.button span {
@@ -168,21 +147,39 @@ a.button:hover span:after {
 
 }
 .factcard {
-  width: 320px; /* Set a specific width for the square shape */
-  height: 300px; /* Set height equal to width to make it square */
-  margin: 10px; /* Adjusts spacing around each card */
-  padding: 20px; /* Maintain padding for spacing */
+  width: 320px; 
+  height: 300px; 
+  margin: 10px; 
+  padding: 20px; 
   box-sizing: border-box;
   display: flex;
-  flex-direction: column; /* Stack content vertically */
-  justify-content: center; /* Center content vertically */
-  align-items: center; /* Center content horizontally */
+  flex-direction: column;
+  align-items: center; 
   background-color:#B8D2E4;
   box-shadow: 5px 10px #003049;
-  font-size: 27px;
-  font-family: "Dosis", sans-serif; font-weight: 400;	margin-top: 12px;
+  font-size: 25px;
+  font-family: "IBM Plex Sans", sans-serif;  
+  font-weight: 400;	
+  margin-top: 12px;
   color:#003049;
+  text-align:center;
 }
+
+.factnumber{
+	font-size:50px;
+}
+
+.factcard span{
+	text-decoration: underline red;
+}
+
+.explore{
+	font-family: "Antic Didone", serif;
+	text-align: center;
+	margin-top: 100px;
+	font-size:2rem;
+}
+
 
 .content-block {
   opacity: 0; 
@@ -201,12 +198,10 @@ a.button:hover span:after {
   align-items: center; 
   justify-content: center; 
   margin: 0 auto 2rem; 
-  font-family: "Dosis", sans-serif; 
+  font-family: "IBM Plex Sans", sans-serif;  
   font-weight: 400;
   max-width: 70rem; 
   font-size:20px;
-  text-align: justify;
-  text-justify: inter-word;
 }
 
 .text h2 {
@@ -222,7 +217,6 @@ a.button:hover span:after {
 .picture, .text {
   flex: 1;
 }
-
 
 .morebutton { 
  background: #B8D2E4; 
@@ -246,8 +240,12 @@ a.button:hover span:after {
 
 }
 @media screen and (min-width:1000px){
+.content-block{
+	flex: 1 1 auto; /* Flex-grow, flex-shrink, flex-basis */
+  max-width: calc(70% - 5rem); /* Adjust max-width as needed, accounting for any gap */
+}
 .content-block:nth-child(odd) .picture {
-  order: 1; 
+  order: 1;
 }
 
 .content-block:nth-child(odd) .text {
