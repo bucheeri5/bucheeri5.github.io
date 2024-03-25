@@ -1,5 +1,5 @@
 body{
-	font-family: "Dosis", sans-serif; 
+	font-family: "IBM Plex Sans", sans-serif;   
 	font-weight: 400;
 }
 
@@ -310,6 +310,7 @@ a.quizbutton:hover span:after {
   .content-block {
     flex-direction: column;
     padding: 0;
+	width: 85%;
   }
 
   .content-block .picture, 
@@ -324,14 +325,14 @@ a.quizbutton:hover span:after {
   }
 
   .content-block .text {
-    width: 100%;
+    width: 90%;
     padding: 0 1rem;
-    font-size: 50px;
+    font-size: 40px;
   }
 
   .morebutton {
-    padding: 100px;
-	font-size: 3rem;
+    padding: 30px;
+	font-size: 2rem;
 	text-align:Center;
 	content-align: center;
   }
@@ -353,7 +354,7 @@ footer {
   padding: 5px;
   background-color: #003049;
   color: white;
-  font-family: "Antic Didone", serif;
+  font-family: "IBM Plex Sans", sans-serif;
   font-size: 1.25rem;
   font-weight:500;
 }
