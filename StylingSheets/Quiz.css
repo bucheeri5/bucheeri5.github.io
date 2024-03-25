@@ -2,29 +2,12 @@ body {
     font-family: Arial, sans-serif;
 	text-align: center;
   color: #023047;
-  background-image: url('images/quizbackground.png'); /* Set the background image */
-  background-size: cover; /* Ensure the image covers the whole area */
-  background-position: center; /* Center the background image */
-   font-family: "Dosis", sans-serif; font-weight: 400;
+
 }
 
 .topheaderpage{
-	background-color:#156669;
+	background-color:#003049;
 	padding:10px;
-	margin-bottom: 10px;
-}
-
-.content {
-  padding: 2px;
-}
-
-.sticky {
-  position: fixed;
-  top: 0;
-  width: 100%;
-}
-.sticky + .content {
-  padding-top: 60px;
 }
 .overlay {
     height: 0%;
@@ -33,7 +16,7 @@ body {
     z-index: 1;
     top: 0;
     left: 0;
-    background-color: #156669;
+    background-color: #003049;
     overflow-x: hidden;
     transition: 0.5s;
 }
@@ -43,10 +26,10 @@ body {
 	width: 100%; 
 	text-align: center; 
 	margin-top: 30px; 
-	font-family: "Dosis", sans-serif; 
+	font-family: "IBM Plex Sans", sans-serif;  
 	font-weight: 400;
 }
- .header-container h1 {
+ .navbarmenu h1 {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -54,14 +37,13 @@ body {
   font-family: "Antic Didone", serif;
   color: white;
 }
-
-.header-container img{
+.navbarmenu img{
   display: flex;
   align-items: left;
   justify-content: left;
   position: relative;
   font-family: "Antic Didone", serif;
-  color: #156669;
+  color: #003049;
 }
 
 .overlay a {
@@ -73,7 +55,7 @@ body {
   transition: 0.3s;
 }
 
-.overlay a:hover, .overlay a:focus {
+.overlay a:hover{
   color: blue;
 }
 .overlay .closebtn {
@@ -99,15 +81,17 @@ body {
   }
 }
 
+
 .quiz-container {
     max-width: 600px;
     margin: auto;
     padding: 20px;
     border: 1px solid #ddd;
 	background-color:#F8E4DC;
-	font-family: "Dosis", sans-serif; font-weight: 400;
-box-shadow: 5px 10px #156669;
+	font-family: "IBM Plex Sans", sans-serif;   font-weight: 400;
+box-shadow: 5px 10px #003049;
 }
+
 
 .question p {
     font-weight: bold;
@@ -124,10 +108,12 @@ box-shadow: 5px 10px #156669;
 footer {
   text-align: center;
   padding: 5px;
-  background-color: #156669;
+  background-color: #003049;
   color: white;
   font-family: "Antic Didone", serif;
-  font-size:2rem;
+  font-size: 1.25rem;
+  font-weight:500;
+  margin-top: 20px;
 }
 
 footer a {
@@ -137,15 +123,13 @@ footer a {
   padding: 5px;
 }
 
-/* Media query for screens that are 600px wide or less */
-@media (max-width: 600px) {
+@media screen and (max-width: 600px) {
   footer {
     padding: 20px; /* Increase padding for better touch interaction */
   }
 
   footer a {
-    font-size: 16px; /* Increase font size for better readability */
+    font-size: 2rem; /* Increase font size for better readability */
     padding: 15px 5px; /* Increase vertical padding */
   }
 }
-

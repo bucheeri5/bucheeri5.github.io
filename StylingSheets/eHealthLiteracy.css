@@ -1,12 +1,14 @@
 .body{
-	color:#156669;
+	color:#003049;
+	  margin: 0;
+  padding: 0;
 	
 }
+
 .topheaderpage{
-	background-color:#156669;
+	background-color:#003049;
 	padding:10px;
 }
-/* The Overlay (background) */
 .overlay {
     height: 0%;
     width: 100%;
@@ -14,52 +16,48 @@
     z-index: 1;
     top: 0;
     left: 0;
-    background-color: #156669;
+    background-color: #003049;
     overflow-x: hidden;
     transition: 0.5s;
 }
-/* Position the content inside the overlay */
 .overlay-content {
-  position: relative;
-  top: 25%; /* 25% from the top */
-  width: 100%; /* 100% width */
-  text-align: center; /* Centered text/links */
-  margin-top: 30px; /* 30px top margin to avoid conflict with the close button on smaller screens */
- font-family: "Dosis", sans-serif; font-weight: 400;
+	position: relative;
+	top: 25%; 
+	width: 100%; 
+	text-align: center; 
+	margin-top: 30px; 
+	font-family: "IBM Plex Sans", sans-serif;  
+	font-weight: 400;
 }
- .header-container h1 {
-            display: flex; /* Use flexbox */
-            align-items: center; /* Center items vertically */
-            justify-content: center; /* Center items horizontally */
-            position: relative; /* Allows absolute positioning inside */
-			  font-family: "Antic Didone", serif;
-			  color:white;
+ .navbarmenu h1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  font-family: "Antic Didone", serif;
+  color: white;
+}
+.navbarmenu img{
+  display: flex;
+  align-items: left;
+  justify-content: left;
+  position: relative;
+  font-family: "Antic Didone", serif;
+  color: #003049;
+}
 
-        }		
-		 .header-container img{
-            display: flex; /* Use flexbox */
-            align-items: left; /* Center items vertically */
-            justify-content: left; /* Center items horizontally */
-            position: relative; /* Allows absolute positioning inside */
-			  font-family: "Antic Didone", serif;
-			  color:#156669;
-
-        }
-/* The navigation links inside the overlay */
 .overlay a {
   padding: 8px;
   text-decoration: none;
   font-size: 36px;
   color: white;
-  display: block; /* Display block instead of inline */
-  transition: 0.3s; /* Transition effects on hover (color) */
-  
+  display: block;
+  transition: 0.3s;
 }
-/* When you mouse over the navigation links, change their color */
-.overlay a:hover, .overlay a:focus {
-  color: #f1f1f1;
+
+.overlay a:hover{
+  color: blue;
 }
-/* Position the close button (top right corner) */
 .overlay .closebtn {
   position: absolute;
   top: 20px;
@@ -82,18 +80,18 @@
     right: 35px;
   }
 }
+
 .e-healthliteracy {
   padding: 20px; /* some padding */
   text-align: center; /* center the text */
 }
 p{
-	   font-family: "Dosis", sans-serif; font-weight: 400;
-
+	    font-family: "IBM Plex Sans", sans-serif;  
 }
 .Introduction{
     padding: 100px;
     text-align: center;
-	color:#156669;
+	color:#003049;
 
 }
 
@@ -101,7 +99,7 @@ p{
     font-family: "Antic Didone", serif;
 }
 .Introduction p{
-	 font-family: "Dosis", sans-serif; font-weight: 400;}
+	 font-family: "IBM Plex Sans", sans-serif;   font-weight: 400;}
 	
 /* Initial state: hidden */
 .section {
@@ -117,7 +115,7 @@ p{
 }
 .e-healthliteracy h1{
   font-size: 30px;
-  color:#156669;
+  color:#003049;
     font-family: "Antic Didone", serif;
 }
 
@@ -152,7 +150,7 @@ padding: 1.25rem; /* 20px / 16px = 1.25rem */
 }
 
 .card {
-   box-shadow: 5px 10px #156669;
+   box-shadow: 5px 10px #003049;
   overflow: hidden;
   width: 90%; 
   background-color: white;
@@ -160,7 +158,9 @@ padding: 1.25rem; /* 20px / 16px = 1.25rem */
   transition: transform 0.2s; /* Animation on hover */
     justify-content: center;
 	   text-align: center;
-	   color:#156669;
+	   color:#003049;
+	    box-sizing: border-box; 
+
 }
 
 .card:hover {
@@ -170,8 +170,7 @@ padding: 1.25rem; /* 20px / 16px = 1.25rem */
 .card p {
   padding: 20px;
   margin: 0; /* Remove default margin */
- font-family: "Dosis", sans-serif; font-weight: 400;
-
+  font-family: "IBM Plex Sans", sans-serif;  
 }
 @media screen and (max-width:1000px){
 	.card-container {
@@ -201,7 +200,7 @@ padding: 1.25rem; /* 20px / 16px = 1.25rem */
 }
 
 h2{
-	     color:#156669;
+	     color:#003049;
 }
 .hoverQuestions-container {
   display: grid;
@@ -213,8 +212,7 @@ h2{
   justify-content: center;
     gap: 12px; /* 10px */
   margin: 12px; /* 10px */
-   font-family: "Dosis", sans-serif; font-weight: 400;
-     color:#156669;
+    font-family: "IBM Plex Sans", sans-serif;       color:#003049;
 
   
 }
@@ -226,7 +224,7 @@ h2{
   display: flex;
   align-items: center; /* Ensure text and icon are vertically aligned */
   background-color: #B8D2E4;
-   box-shadow: 2.5px 5px #156669;
+   box-shadow: 2.5px 5px #003049;
 
 }
 
@@ -237,8 +235,7 @@ h2{
 }
 .e-healthliteracy p{
 	font-size: 19px;
-	   font-family: "Dosis", sans-serif; font-weight: 400;
-}
+	    font-family: "IBM Plex Sans", sans-serif;  }
 
 .section p {
 	line-height: 1.6; /* Space between lines for readability */
@@ -257,7 +254,7 @@ h2{
 
 .ehealthliteracy-card {
   background-color: #ffffff; /* White background */
-   box-shadow: 5px 10px #156669;
+   box-shadow: 5px 10px #003049;
   overflow: hidden; /* Ensures content fits within the borders */
   transition: transform 0.3s ease-in-out; /* Smooth transformation */
 }
@@ -269,8 +266,7 @@ h2{
 .ehealthliteracy-card a {
   display: block; /* Makes the whole area clickable */
   padding: 15px; /* Padding inside the card */
-   font-family: "Dosis", sans-serif; font-weight: 400;
-}
+    font-family: "IBM Plex Sans", sans-serif;  }
 
 .ehealthliteracy-card img {
   width: 100%; /* Ensures image covers card width */
@@ -297,13 +293,25 @@ h2{
   }
 }
 
+.scroll-top {
+  position: fixed; 
+  bottom: 3rem; 
+  right: 2rem; 
+  display: block;
+}
+
+section {
+  height: 300vh; 
+}
+
 footer {
   text-align: center;
   padding: 5px;
-  background-color: #156669;
+  background-color: #003049;
   color: white;
-  font-family: "Antic Didone", serif;
-  font-size:2rem;
+  font-family: "IBM Plex Sans", sans-serif;
+  font-size: 1.25rem;
+  font-weight:500;
 }
 
 footer a {
@@ -313,14 +321,13 @@ footer a {
   padding: 5px;
 }
 
-/* Media query for screens that are 600px wide or less */
-@media (max-width: 600px) {
+@media screen and (max-width: 600px) {
   footer {
     padding: 20px; /* Increase padding for better touch interaction */
   }
 
   footer a {
-    font-size: 16px; /* Increase font size for better readability */
+    font-size: 2rem; /* Increase font size for better readability */
     padding: 15px 5px; /* Increase vertical padding */
   }
 }
