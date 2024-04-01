@@ -1,5 +1,5 @@
 .body{
-	color:#003049;
+	color:#0F1020;
 	  margin: 0;
   padding: 0;
 	
@@ -9,7 +9,7 @@ p{
 }
 
 .topheaderpage{
-	background-color:#003049;
+	background-color:#0F1020;
 	padding:10px;
 }
 .overlay {
@@ -19,7 +19,7 @@ p{
     z-index: 1;
     top: 0;
     left: 0;
-    background-color: #003049;
+    background-color: #0F1020;
     overflow-x: hidden;
     transition: 0.5s;
 }
@@ -40,13 +40,16 @@ p{
   font-family: "Antic Didone", serif;
   color: white;
 }
+.navbarmenu a{ 
+  text-decoration:none;
+}
 .navbarmenu img{
   display: flex;
   align-items: left;
   justify-content: left;
   position: relative;
   font-family: "Antic Didone", serif;
-  color: #003049;
+  color: #0F1020;
 }
 
 .overlay a {
@@ -59,7 +62,7 @@ p{
 }
 
 .overlay a:hover{
-  color: blue;
+  color: #A8B4E9;
 }
 .overlay .closebtn {
   position: absolute;
@@ -112,13 +115,13 @@ p{
   }
 }
 .herosection {
-  color: #003049;
+  color: #0F1020;
   display: flex;
   align-items: center; 
   justify-content: center; 
   margin: 0 auto 2rem; 
   padding: 5rem ;
-  color: #003049;
+  color: #0F1020;
   font-family: "Antic Didone", serif;
   padding-left: 4rem; 
   margin:50px;
@@ -137,6 +140,10 @@ p{
 }
 .herosection img, .herosection h1 {
   flex: 1;
+}
+.herosection p{
+	  font-family: "IBM Plex Sans", sans-serif;  
+  font-size: 1.5rem; 
 }
 
 @media screen and (min-width:1000px) {
@@ -166,7 +173,7 @@ p{
 .section h1{
 	text-align:center;
 	font-family: "Antic Didone", serif;
-	  color: #003049;
+	  color: #0F1020;
 
 }
 .card-container {
@@ -188,13 +195,16 @@ p{
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: #DFEFEB;
-  box-shadow: 0.3125rem 0.625rem #003049; 
+  box-shadow: 0.3125rem 0.625rem #0F1020; 
+  border-style: solid;
+  border-width: medium;
   font-size: 1.125rem;
   font-family: "IBM Plex Sans", sans-serif;
   font-weight: 400;
-  color: #003049;
+  color: #0F1020;
   text-align: center;
+    line-height: 1.6;
+
 }
 
 .card img {
@@ -204,20 +214,19 @@ p{
 }
 
 h2{
-	     color:#003049;
+	     color:#0F1020;
 }
 .QuestionseHealths-container {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
    text-align: justify;
-  padding: 25px; /* 20px */
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-    gap: 12px; /* 10px */
+   padding: 25px; /* 20px */
+   display: flex;
+   flex-direction: column;
+  gap: 12px; /* 10px */
   margin: 12px; 
     font-family: "IBM Plex Sans", sans-serif;       
-	color:#003049;
+	color:#0F1020;
+	
 
   
 }
@@ -228,8 +237,10 @@ h2{
   cursor: pointer;
   display: flex;
   align-items: center; 
-  background-color: #DFEFEB;
-  box-shadow: 2.5px 5px #003049;
+  box-shadow: 2.5px 5px #0F1020;
+  border-style: solid;
+  border-width: medium;
+  
 
 }
 
@@ -240,6 +251,10 @@ h2{
 .section h2 {
   font-family: "Antic Didone", serif;
 }
+.section h3 {
+  font-family: "Antic Didone", serif;
+}
+
 
 
 .Resources {
@@ -260,10 +275,12 @@ h2{
   display: flex;
   flex-direction: column;
   align-items: center;
-  box-shadow: 0.3125rem 0.625rem #003049; 
+  box-shadow: 0.3125rem 0.625rem #0F1020; 
   width: 240px; 
   font-family: "IBM Plex Sans", sans-serif;       
   font-size: 20px;
+  border-style: solid;
+  border-width: medium;
 }
 
 .resourcescards img {
@@ -277,7 +294,7 @@ h2{
   width: 100%; 
   display: block; /* Makes the link fill its container */
   text-decoration: none;
-  color: #003049; /* Example color */
+  color: #0F1020; /* Example color */
 }
 
 
@@ -296,10 +313,11 @@ section {
   height: 300vh; 
 }
 
+
 footer {
   text-align: center;
   padding: 5px;
-  background-color: #003049;
+  background-color: #0F1020;
   color: white;
   font-family: "IBM Plex Sans", sans-serif;
   font-size: 1.25rem;
@@ -315,11 +333,13 @@ footer a {
 
 @media screen and (max-width: 600px) {
   footer {
-    padding: 20px; /* Increase padding for better touch interaction */
+    padding: 20px; 
   }
 
   footer a {
-    font-size: 2rem; /* Increase font size for better readability */
-    padding: 15px 5px; /* Increase vertical padding */
+    font-size: 1.5rem; 
   }
 }
+
+}
+

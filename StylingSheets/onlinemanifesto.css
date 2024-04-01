@@ -1,9 +1,10 @@
 
 
 .topherosectionpage{
-	background-color:#003049;
+	background-color:#0F1020;
 	padding:10px;
 }
+
 .overlay {
     height: 0%;
     width: 100%;
@@ -11,7 +12,7 @@
     z-index: 1;
     top: 0;
     left: 0;
-    background-color: #003049;
+    background-color: #0F1020;
     overflow-x: hidden;
     transition: 0.5s;
 }
@@ -32,13 +33,16 @@
   font-family: "Antic Didone", serif;
   color: white;
 }
+.navbarmenu a{ 
+  text-decoration:none;
+}
 .navbarmenu img{
   display: flex;
   align-items: left;
   justify-content: left;
   position: relative;
   font-family: "Antic Didone", serif;
-  color: #003049;
+  color: #0F1020;
 }
 
 .overlay a {
@@ -51,7 +55,7 @@
 }
 
 .overlay a:hover{
-  color: blue;
+  color: A8B4E9;
 }
 .overlay .closebtn {
   position: absolute;
@@ -76,16 +80,18 @@
   }
 }
 
-
+.bold-text {
+    font-weight: bold;
+}
 
 .herosection {
-  color: #003049;
+  color: #0F1020;
   display: flex;
   align-items: center; 
   justify-content: center; 
   margin: 0 auto 2rem; 
   padding: 5rem ;
-  color: #003049;
+  color: #0F1020;
   font-family: "Antic Didone", serif;
   padding-left: 4rem; 
   margin:50px;
@@ -105,6 +111,10 @@
   flex: 1;
 }
 
+.herosection p{
+	  font-family: "IBM Plex Sans", sans-serif;  
+  font-size: 1.5rem; 
+}
 @media screen and (min-width:1000px) {
 .herosectiontext {
   order: 1;
@@ -131,7 +141,7 @@
 }
 
 .contentblock {
-  color: #003049;
+  color: #0F1020;
   display: flex;
   align-items: center; 
   justify-content: center; 
@@ -141,7 +151,7 @@
   max-width: 70rem; 
      padding: 200px;
     transition: all 0.5s ease-out; /* Smooth transition for any change */
-    text-align: center;
+    text-align: left;
   font-size:20px;
 }
 
@@ -161,15 +171,13 @@
     font-family: "Antic Didone", serif;
 }
 
-/* Alternating section backgrounds */
+/* Alternating section backgrounds 
 .contentblock:nth-child(odd) {
-    background-color: #DFEFEB;
-    text-align: left;
-}
+    background-color: #A8B4E9;
+}*/
 
 .contentblock:nth-child(even) {
     background-color: white;
-    text-align: right;
 }
 
 @media screen and (min-width:1000px){
@@ -216,12 +224,29 @@
     font-size: 1.25rem;
   }
 }
-
+.scrollButton {
+  padding: 10px 20px;
+  background-color: #0F1020;
+  color: white;
+  border: none;
+  cursor: pointer;
+  position: fixed; 
+  bottom: 20px; 
+  right: 20px; 
+  font-family: "IBM Plex Sans", sans-serif;
+  font-size:1rem;
+}
+@media screen and (max-width: 1000px) {
+.scrollButton{
+	display:none;
+}
+}
+	
 
 footer {
   text-align: center;
   padding: 5px;
-  background-color: #003049;
+  background-color: #0F1020;
   color: white;
   font-family: "IBM Plex Sans", sans-serif;
   font-size: 1.25rem;
@@ -237,11 +262,12 @@ footer a {
 
 @media screen and (max-width: 600px) {
   footer {
-    padding: 20px; /* Increase padding for better touch interaction */
+    padding: 20px; 
   }
 
   footer a {
-    font-size: 2rem; /* Increase font size for better readability */
-    padding: 15px 5px; /* Increase vertical padding */
+    font-size: 1.5rem; 
   }
+}
+
 }
