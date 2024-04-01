@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <title>Quiz</title>
-<link rel="stylesheet" href="StylingSheets/Quiz.css"> <!-- Link to your CSS file -->
+<link rel="stylesheet" href="StylingSheets/Quiz.css">
 <script src="Javascript/QuizJava.js"></script>
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -23,8 +23,6 @@
 </head>
 
 <body>
-<main>
-<section>
 
 <div class="maincontent">
 
@@ -46,93 +44,101 @@
 <div id="navbar">
 <div class="navbarmenu">
     <span onclick="openNav()"><img src="Images/menuicon.svg" alt="Menu" style="width: 30px; height: 30px; cursor: pointer;"></span>
-    <h1>WebWellness</h1>
+<a href="index.html"><h1>WebWellness</h1></a>
 </div>
 </div>
 </div>
 
-<div class="quiz-container">
-    <h1>E-Health Literacy Quiz</h1>
-    <form id="quizForm">
-        <div class="question">
-            <p>1. Where should you check for credible health information online?</p>
-            <label><input type="radio" name="q1" value="0"> Social media posts</label><br>
-            <label><input type="radio" name="q1" value="1"> Official health organization websites</label><br>
-            <label><input type="radio" name="q1" value="0"> Online forums</label>
-        </div>
-        
-        <div class="question">
-            <p>2. What is important to review when visiting a health website?</p>
-            <label><input type="radio" name="q2" value="0"> Website design</label><br>
-            <label><input type="radio" name="q2" value="1"> Privacy policy</label><br>
-            <label><input type="radio" name="q2" value="0"> Number of advertisements</label>
-        </div>
-        
-        <div class="question">
-            <p>3. Which of the following is a sign of biased health information?</p>
-            <label><input type="radio" name="q3" value="1"> Information promoting a specific product for profit</label><br>
-            <label><input type="radio" name="q3" value="0"> Peer-reviewed research articles</label><br>
-            <label><input type="radio" name="q3" value="0"> Government health guidelines</label>
-        </div>
-   
-        <div class="question">
-            <p>3. Which of the following is a sign of biased health information?</p>
-            <label><input type="radio" name="q3" value="1"> Information promoting a specific product for profit</label><br>
-            <label><input type="radio" name="q3" value="0"> Peer-reviewed research articles</label><br>
-            <label><input type="radio" name="q3" value="0"> Government health guidelines</label>
-        </div>
+<body onload="NextQuestion(0)">
+    <main>
+        <!-- creating a modal for when quiz ends -->
+        <div class="modal-container" id="score-modal">
 
-        <!-- New questions -->
-        <div class="question">
-            <p>4. How often should you verify the currency of health information online?</p>
-            <label><input type="radio" name="q4" value="0"> Once a year</label><br>
-            <label><input type="radio" name="q4" value="1"> Every time you consult it</label><br>
-            <label><input type="radio" name="q4" value="0"> Only if the information seems outdated</label>
-        </div>
-        
-        <div class="question">
-            <p>5. What is a key component of e-health literacy?</p>
-            <label><input type="radio" name="q5" value="1"> Ability to evaluate the reliability of online health information</label><br>
-            <label><input type="radio" name="q5" value="0"> Knowing how to use a search engine</label><br>
-            <label><input type="radio" name="q5" value="0"> Having a social media account</label>
-        </div>
+            <div class="modal-content-container">
 
-       <!-- Continuing from the last question (5) -->
-        <div class="question">
-            <p>6. How can you communicate securely with your healthcare provider online?</p>
-            <label><input type="radio" name="q6" value="1"> Through a secure patient portal provided by the healthcare provider</label><br>
-            <label><input type="radio" name="q6" value="0"> Via any popular social media platform</label><br>
-            <label><input type="radio" name="q6" value="0"> Through personal email</label>
-        </div>
-        
-        <div class="question">
-            <p>7. What should you consider when choosing a health app?</p>
-            <label><input type="radio" name="q7" value="0"> The number of downloads</label><br>
-            <label><input type="radio" name="q7" value="1"> Privacy policy and data security measures</label><br>
-            <label><input type="radio" name="q7" value="0"> Only the app's user interface</label>
-        </div>
-        
-        <div class="question">
-            <p>8. Which feature indicates that a health information website is secure?</p>
-            <label><input type="radio" name="q8" value="1"> URL starts with HTTPS</label><br>
-            <label><input type="radio" name="q8" value="0"> Presence of numerous pop-up ads</label><br>
-            <label><input type="radio" name="q8" value="0"> Website contains user testimonials</label>
-        </div>
+                <h1>Congratulations, Quiz Completed.</h1>
 
-        <button type="button" onclick="calculateScore()">Submit</button>
-    </form>
-    <div id="result"></div>
+                <div class="grade-details">
+                    <p>Attempts : 10</p>
+                    <p>Wrong Answers : <span id="wrong-answers"></span></p>
+                    <p>Right Answers : <span id="right-answers"></span></p>
+                    <p>Grade : <span id="grade-percentage"></span>%</p>
+                    <p ><span id="remarks"></span></p>
+                </div>
 
+                <div class="modal-button-container">
+                    <button onclick="closeScoreModal()">Continue</button>
+                </div>
+
+            </div>
+        </div>
+<!-- end of modal of quiz details-->
+
+        <div class="game-quiz-container">
+
+            <div class="game-details-container">
+                <h1>Score : <span id="player-score"></span> / 10</h1>
+                <h1> Question : <span id="question-number"></span> / 10</h1>
+            </div>
+
+            <div class="game-question-container">
+                <h1 id="display-question"></h1>
+            </div>
+
+            <div class="game-options-container">
+
+               <div class="modal-container" id="option-modal">
+
+                    <div class="modal-content-container">
+                         <h1>Please Pick An Option</h1>
+
+                         <div class="modal-button-container">
+                            <button onclick="closeOptionModal()">Continue</button>
+                        </div>
+
+                    </div>
+
+               </div>
+
+                <span>
+                    <input type="radio" id="option-one" name="option" class="radio" value="optionA" />
+                    <label for="option-one" class="option" id="option-one-label"></label>
+                </span>
+
+
+                <span>
+                    <input type="radio" id="option-two" name="option" class="radio" value="optionB" />
+                    <label for="option-two" class="option" id="option-two-label"></label>
+                </span>
+
+
+                <span>
+                    <input type="radio" id="option-three" name="option" class="radio" value="optionC" />
+                    <label for="option-three" class="option" id="option-three-label"></label>
+                </span>
+
+
+                <span>
+                    <input type="radio" id="option-four" name="option" class="radio" value="optionD" />
+                    <label for="option-four" class="option" id="option-four-label"></label>
+                </span>
+
+
+            </div>
+
+            <div class="next-button-container">
+                <button onclick="handleNextQuestion()">Next Question</button>
+            </div>
+
+        </div>
+    </main>
 </div>
-
-
-
 <footer>
 <a href="index.html">Home</a>
 <a href="ehealthliteracy.html">What is e-Health Literacy?</a>
 <a href="onlinemanifesto.html">Navigating Resources Online</a>
 <a href="healthhub.html">Student Health Hub</a>
-<a href="about.html">About.html</a>
+<a href="about.html">About</a>
 
 </footer>
 </body>

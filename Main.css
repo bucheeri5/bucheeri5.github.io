@@ -5,7 +5,7 @@ body{
 
 
 .topherosectionpage{
-	background-color:#003049;
+	background-color:#0F1020;
 	padding:10px;
 }
 .overlay {
@@ -15,7 +15,7 @@ body{
     z-index: 1;
     top: 0;
     left: 0;
-    background-color: #003049;
+    background-color: #0F1020;
     overflow-x: hidden;
     transition: 0.5s;
 }
@@ -36,13 +36,16 @@ body{
   font-family: "Antic Didone", serif;
   color: white;
 }
+.navbarmenu a{ 
+  text-decoration:none;
+}
 .navbarmenu img{
   display: flex;
   align-items: left;
   justify-content: left;
   position: relative;
   font-family: "Antic Didone", serif;
-  color: #003049;
+  color: #0F1020;
 }
 
 .overlay a {
@@ -55,7 +58,7 @@ body{
 }
 
 .overlay a:hover{
-  color: blue;
+  color: A8B4E9;
 }
 .overlay .closebtn {
   position: absolute;
@@ -63,6 +66,7 @@ body{
   left: 45px;
   font-size: 60px;
 }
+
 @media screen and (max-height: 450px) {
   .overlay a {font-size: 20px}
   .overlay .closebtn {
@@ -82,13 +86,13 @@ body{
 
 
 .herosection {
-  color: #003049;
+  color: #0F1020;
   display: flex;
   align-items: center; 
   justify-content: center; 
   margin: 0 auto 2rem; 
   padding: 5rem ;
-  color: #003049;
+  color: #0F1020;
   font-family: "Antic Didone", serif;
   padding-left: 4rem; 
   margin:50px;
@@ -120,7 +124,7 @@ body{
 
 @media screen and (max-width: 600px) {
   .herosection {
-    padding: 3rem 1rem; /* Reduced padding for smaller screens */
+    padding: 3rem 1rem; 
   }
 }
 @media screen and (max-width:1000px) {
@@ -143,15 +147,15 @@ body{
 
 
 a.quizbutton {
-  border: 2px solid #003049;
-  color: #003049;
-  background-color: #DFEFEB; 
+  border: 2px solid #0F1020;
+  color: #0F1020;
+  background-color: #A8B4E9; 
   text-align: center;
   font-size: 20px;
   padding: 22px;
   transition: all 0.5s;
   cursor: pointer;
-  box-shadow: 2px 4px #003049;
+  box-shadow: 2px 4px #0F1020;
   font-weight: bold; 
   text-decoration: none;
   border: 0; 
@@ -188,8 +192,8 @@ a.quizbutton:hover span:after {
 
 .factcards-container {
   display: flex;
-  justify-content: space-around; /* Adjusts spacing between cards */
-  flex-wrap: wrap; /* Allows cards to wrap in smaller screens */
+  justify-content: space-around;
+  flex-wrap: wrap; 
 }
 .factcard {
   width: 320px; 
@@ -200,13 +204,13 @@ a.quizbutton:hover span:after {
   display: flex;
   flex-direction: column;
   align-items: center; 
-  background-color:#DFEFEB;
-  box-shadow: 5px 10px #003049;
+  background-color:#A8B4E9;
+  box-shadow: 5px 10px #0F1020;
   font-size: 25px;
   font-family: "IBM Plex Sans", sans-serif;  
   font-weight: 400;	
   margin-top: 12px;
-  color:#003049;
+  color:#0F1020;
   text-align:center;
 }
 
@@ -218,17 +222,24 @@ a.quizbutton:hover span:after {
 	text-decoration: underline;
 }
 
+.factcard ul {
+    position: absolute; /* Positions the ul relative to its first positioned (not static) ancestor element */
+    bottom: 10px; /* Positions the ul at the bottom of the .factcard */
+    font-size: 0.8em; /* Makes the text smaller */
+	color:white;
+}
+
 .explore{
 	font-family: "Antic Didone", serif;
 	text-align: center;
 	margin-top: 70px;
-	  color:#003049;
+	  color:#0F1020;
 	font-size:2rem;
 }
 
 
 .content-block {
-  color: #003049;
+  color: #0F1020;
   display: flex;
   align-items: center; 
   justify-content: center; 
@@ -237,6 +248,9 @@ a.quizbutton:hover span:after {
   font-weight: 400;
   max-width: 70rem; 
   font-size:20px;
+}
+.text span {
+    font-weight: bold;
 }
 
 .text h2 {
@@ -254,7 +268,7 @@ a.quizbutton:hover span:after {
 }
 
 .morebutton { 
- background: #DFEFEB; 
+ background: #A8B4E9; 
  box-sizing: border-box; 
  color: #FFFFFF; 
  font-size: 20px; 
@@ -265,14 +279,16 @@ a.quizbutton:hover span:after {
  word-break: break-word; 
  border: 0; 
  font-family: "Antic Didone", serif;
- box-shadow: 2px 4px #003049;
+ box-shadow: 2px 4px #0F1020;
  font-weight: bold; 
 }
 
+.morebutton:hover a {
+    color: red;
+}
 .morebutton a{
   text-decoration: none;
-  color: #003049; 
-
+  color: #0F1020; 
 }
 @media screen and (min-width:1000px){
 .content-block{
@@ -301,6 +317,7 @@ a.quizbutton:hover span:after {
     flex-direction: column;
     padding: 0;
 	width: 85%;
+	font-align:center;
   }
 
   .content-block .picture, 
@@ -317,12 +334,16 @@ a.quizbutton:hover span:after {
   .content-block .text {
     width: 90%;
     padding: 0 1rem;
-    font-size: 40px;
   }
-
+  .content-block h2{
+	font-size: 2 rem;
+}
+ .content-block h2{
+	font-size: 1.5 rem;
+}
   .morebutton {
-    padding: 30px;
-	font-size: 2rem;
+    padding: 1.75rem;
+	font-size: 1.5rem;
 	text-align:Center;
 	content-align: center;
   }
@@ -339,7 +360,7 @@ a.quizbutton:hover span:after {
 footer {
   text-align: center;
   padding: 5px;
-  background-color: #003049;
+  background-color: #0F1020;
   color: white;
   font-family: "IBM Plex Sans", sans-serif;
   font-size: 1.25rem;
@@ -355,11 +376,12 @@ footer a {
 
 @media screen and (max-width: 600px) {
   footer {
-    padding: 20px; /* Increase padding for better touch interaction */
+    padding: 20px; 
   }
 
   footer a {
-    font-size: 2rem; /* Increase font size for better readability */
-    padding: 15px 5px; /* Increase vertical padding */
+    font-size: 1.5rem; 
   }
+}
+
 }
