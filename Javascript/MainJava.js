@@ -1,4 +1,6 @@
-    /* Function to open the overlay */
+ 
+
+   /* Function to open the overlay */
     function openNav() {
         document.getElementById("myNav").style.height = "100%";
     }
@@ -119,28 +121,8 @@ document.addEventListener('DOMContentLoaded', () => {
         observer.observe(div);
     });
 });
-function animateNumbers() {
-    let counters = document.querySelectorAll('.numbers');
 
-    counters.forEach(counter => {
-        let target = +counter.getAttribute('data-count');
-        let count = 0;
-        let speed = 50; // Adjust animation speed (lower is faster)
-        let increment = Math.ceil(target / speed); // Increment by 1 or more for faster animation
 
-        let updateCount = () => {
-            count += increment;
-            if (count < target) {
-                counter.innerText = count; // Assuming you want to append '%' for percentage values
-                setTimeout(updateCount, 10); // Adjust timeout for smoother animation
-            } else {
-                counter.innerText = target; // Ensure the final value is correctly displayed with '%'
-            }
-        };
-
-        updateCount();
-    });
-}
 
 // Define the scroll event listener as a separate function so it can be removed later
 function onScrollAnimate() {
