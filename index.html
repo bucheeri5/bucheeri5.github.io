@@ -9,17 +9,12 @@
 <script src="Javascript/MainJava.js"></script>
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="anonymous">
-<link href="https://fonts.googleapis.com/css2?family=Antic+Didone&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Shrikhand&display=swap" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
-
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -29,64 +24,66 @@
 <div id="myNav" class="overlay">
 
 <!-- Button to close the overlay navigation -->
-<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+<a href="javascript:void(0)" class="closebtn" onclick="closeNav()" aria-label="Close navigation menu">&times;</a>
 
 <!-- Overlay content -->
 <div class="overlay-content">
         <a href="index.html">Home</a>
-        <a href="ehealthliteracy.html">What is e-Health Literacy?</a>
+		<a href="about.html">About</a>
+        <a href="ehealthliteracy.html">What is eHealth Literacy?</a>
         <a href="onlinemanifesto.html">Navigating Resources Online</a>
         <a href="healthhub.html">Student Health Hub</a>
-		<a href="about.html">About</a>
+		
 </div>
 </div>
 <div id="navbar">
 <div class="navbarmenu">
-    <span onclick="openNav()"><img src="Images/menuicon.svg" alt="Menu" style="width: 30px; height: 30px; cursor: pointer;"></span>
+    <span onclick="openNav()"><img src="Images/menuicon.svg" alt="Menu" style="width: 30px; height: 30px;"></span>
 <a href="index.html"><h1>WebWellness</h1></a>
 </div>
 </div>
 </div>
-
+<!-- Hero section -->
 <div class="herosection">
 <img class="coverimg" src="Images/coverimg.png" alt="Navigating Information Online" style="width:100%">
 <div class="herosectiontext">
-<h1>Take Control of your Wellness in the Age of <span class="text-yellow">Misinformation</span></h1>
-<a href="quizpage.html" class="quizbutton"><span>Test Your e-Health Literacy </span></a>
+<h1>Elevate your <span class="text-yellow">eHealth Literacy </span> in the age of <span class="text-yellow">Misinformation</span></h1>
+<a href="quiz.html" class="quizbutton"><span>Test Your eHealth Literacy </span></a>
 </div>
 
 </div>
+<!-- Factcards -->
 
 <div class="factcards-container">
 <div class="factcard">
-<div class="factnumber">61%</div>
-<p>of social media users think they can tell if something is true or false <span>without having the skills</span> to do so</p>
-<ul>
-</li>source</li>
-<ul>
+<div class="factnumber"><a href="https://fullfact.org/media/uploads/online_health_misinformation_in_the_uk_full_fact.pdf">70,000</a></div>
+<p>Google searches every <span>minute</span> are about health information</p>
+</div>
+
+
+<div class="factcard">
+<div class="factnumber"><a href="https://fullfact.org/media/uploads/online_health_misinformation_in_the_uk_full_fact.pdf">74%</a></div>
+<p>of social media users are worried about the spread of misinformation</p>
 </div>
 
 <div class="factcard">
-<div class="factnumber">74%</div>
-<p>of social media users are <span>worried</span> about the spread of misinformation</p>
+  <div class="factnumber"><a href="https://www.bbc.co.uk/news/world-53755067">5,800</a></div>
+  <p>hospital admissions from drinking methanol or cleaning products to cure COVID-19</p>
 </div>
     
-<div class="factcard">
-<div class="factnumber">70,000</div>
-<p>searches every <span>minute</span> are related to health information in google</p>
-</div>
 
 </div>
+<!-- Explore other pages -->
 
-<h1 class="explore"> Explore Pages </h1>
+<h1 class="explore">Learn More</h1>
 
 <div class="content-block">
 <div class="picture">
-<img src="Images/ehealthliteracy.png" alt="Sara" style="width:100%">
+<img src="Images/ehealthliteracy.png" alt="An illustration of a phone screen with a doctor's arms extending out of it, holding a stethoscope" style="width:100%">
 </div>
 <div class="text">
-<h2>What is e-health literacy?</h2>
-<p>As <span>digital health resources</span> have become <span>increasingly important to our well-being</span>, effectively using these tools has become <span>essential</span> for both patients and healthcare providers. Learn how to leverage digital health as an <span>advantage.</span></p>
+<h2>What is eHealth literacy?</h2>
+<p>As digital health resources have become increasingly important, effectively leveraging these tools is essential. Learn how to use digital health to your advantage.</p>
 <button class="morebutton"><a href="ehealthliteracy.html"><span>More</span></a></button>
 </div>
 </div>
@@ -94,42 +91,43 @@
 <div class="content-block">
 
 <div class="picture">
-<img src="Images/stepguide.png" alt="Navigating Information Online" style="width:100%">
+<img src="Images/stepguide.png" alt="An illustration of a phone recieving multiple health notifications" style="width:100%">
 </div>
 
 <div class="text">
 <h2>Navigating Information Online</h2>
-<p>Become an <span>informed health information seeker</span> by following this <span>step-by-step</span> guide. The internet is overflowing with health information and misinformation alike, and it is <span>time to take control.</span></p>
+<p>Become an informed seeker of health information with this guide. Navigate through abundant health information and misinformation on the internet with ease.</p>
 <button class="morebutton"><a href="onlinemanifesto.html"><span>More</span></a></button>
 </div>
 </div>
 
 <div class="content-block">
 <div class="picture">
-<img src="Images/healthhub.png" alt="Protecting Health Information" style="width:100%">
+<img src="Images/healthhub.png" alt="An illustration of a gamecard saying "Medicine at your Door"" style="width:100%">
 </div>
 
 <div class="text">
 <h2>Student Health Hub</h2>
-<p>Discover the Health Hub for well-being resources here at UofG, from <span>professional advice to peer support</span>. Unlock the door to a <span>healthier and more informed lifestyle</span> with access to services and information tailored to your needs.</p>
+<p>Discover well-being resources at UofG's Health Hub, from professional advice to peer support. </p>
 <button class="morebutton"><a href="healthhub.html"><span>More</span></a></button>
 </div>
 
 </div>
+<!-- Scroll to top -->
 
 <div class="scroll-top"> 
 <a class="scroll-top-link" href="index.html"><img src="Images/scrollupicon.png" width="50px" alt=" Arrow pointing upwards"></a>
 </div>
 
 
+<!-- Footer -->
 
 <footer>
 <a href="index.html">Home</a>
-<a href="ehealthliteracy.html">What is e-Health Literacy?</a>
+<a href="about.html">About</a>
+<a href="ehealthliteracy.html">What is eHealth Literacy?</a>
 <a href="onlinemanifesto.html">Navigating Resources Online</a>
 <a href="healthhub.html">Student Health Hub</a>
-<a href="about.html">About</a>
-
 </footer>
 </body>
 </html>
