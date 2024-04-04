@@ -62,7 +62,7 @@ bottom: -2rem;
 }
 
 .overlay a:hover{
-  color: #CFE2EB;
+  color: #219ebc;
 }
 .overlay .closebtn {
   position: absolute;
@@ -243,11 +243,10 @@ h2{
 }
 .QuestionseHealths-container {
   display: grid;
-   text-align: justify;
-   padding: 25px; /* 20px */
+   padding: 25px; 
    display: flex;
    flex-direction: column;
-  gap: 12px; /* 10px */
+  gap: 12px; 
   margin: 12px; 
     font-family: "Montserrat", sans-serif;       
 	color:#023047; 
@@ -378,6 +377,9 @@ footer a {
   text-decoration: none;
   display: block;
   padding: 5px;
+}
+footer a:hover{
+	  background-color: #0E4C5F;
 }
 
 @media screen and (max-width: 600px) {

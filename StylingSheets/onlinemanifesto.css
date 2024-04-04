@@ -61,7 +61,7 @@ bottom: -2rem;
 }
 
 .overlay a:hover{
-  color: CFE2EB;
+  color: #219ebc;
 }
 .overlay .closebtn {
   position: absolute;
@@ -272,7 +272,9 @@ footer a {
   display: block;
   padding: 5px;
 }
-
+footer a:hover{
+	  background-color: #0E4C5F;
+}
 @media screen and (max-width: 600px) {
   footer {
     padding: 20px; 
