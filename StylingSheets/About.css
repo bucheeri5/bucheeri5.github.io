@@ -1,6 +1,9 @@
-
+body{
+	color:#023047;
+	margin: 0;
+}
 .topherosectionpage{
-	background-color:#0F1020;
+	background-color:#023047;
 	padding:10px;
 }
 .overlay {
@@ -10,7 +13,7 @@
     z-index: 1;
     top: 0;
     left: 0;
-    background-color: #0F1020;
+    background-color: #023047;
     overflow-x: hidden;
     transition: 0.5s;
 }
@@ -20,7 +23,7 @@
 	width: 100%; 
 	text-align: center; 
 	margin-top: 30px; 
-	font-family: "IBM Plex Sans", sans-serif;  
+  font-family: "Oswald", sans-serif; 
 	font-weight: 400;
 }
  .navbarmenu h1 {
@@ -28,8 +31,8 @@
   align-items: center;
   justify-content: center;
   position: relative;
-  font-family: "Antic Didone", serif;
-  color: white;
+ font-family: "Oswald", sans-serif;  
+ color: white;
 }
 .navbarmenu a{ 
   text-decoration:none;
@@ -39,8 +42,10 @@
   align-items: left;
   justify-content: left;
   position: relative;
-  font-family: "Antic Didone", serif;
-  color: #0F1020;
+ font-family: "Oswald", sans-serif;  
+ color: #023047;
+ right: -2rem; 
+bottom: -2rem;
 }
 
 .overlay a {
@@ -53,7 +58,7 @@
 }
 
 .overlay a:hover{
-  color: A8B4E9;
+  color: CFE2EB;
 }
 .overlay .closebtn {
   position: absolute;
@@ -79,15 +84,15 @@
 }
 
 .herosection {
-  color: #0F1020;
+  color: #023047;
   display: flex;
   align-items: center; 
   justify-content: center; 
   margin: 0 auto 2rem; 
   padding: 5rem ;
-  color: #0F1020;
-  font-family: "Antic Didone", serif;
-  padding-left: 4rem; 
+  color: #023047;
+ font-family: "Oswald", sans-serif;  
+ padding-left: 4rem; 
   margin:50px;
 
 }
@@ -100,11 +105,12 @@
 
 .herosection h1 {
   font-size: 3rem; 
+   font-family: "Oswald", sans-serif; 
 }
 
 .herosection p{
-	  font-family: "IBM Plex Sans", sans-serif;  
-  font-size: 1.5rem; 
+font-family: "Montserrat", sans-serif;  
+font-size: 1.5rem; 
 }
 .herosection img, .herosection h1 {
   flex: 1;
@@ -138,11 +144,11 @@
 footer {
   text-align: center;
   padding: 5px;
-  background-color: #0F1020;
+  background-color: #023047;
   color: white;
-  font-family: "IBM Plex Sans", sans-serif;
-  font-size: 1.25rem;
+  font-size: 1.5rem;
   font-weight:500;
+  font-family: "Oswald", sans-serif; 
 }
 
 footer a {

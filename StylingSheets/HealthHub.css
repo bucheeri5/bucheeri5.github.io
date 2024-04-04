@@ -1,5 +1,9 @@
+body{
+	color:#023047;
+	margin: 0;	
+}
 .topheaderpage{
-	background-color:#0F1020;
+	background-color:#023047;
 	padding:10px;
 }
 .overlay {
@@ -9,7 +13,7 @@
     z-index: 1;
     top: 0;
     left: 0;
-    background-color: #0F1020;
+    background-color: #023047;
     overflow-x: hidden;
     transition: 0.5s;
 }
@@ -19,7 +23,7 @@
 	width: 100%; 
 	text-align: center; 
 	margin-top: 30px; 
-	font-family: "IBM Plex Sans", sans-serif;  
+  font-family: "Oswald", sans-serif; 
 	font-weight: 400;
 }
  .navbarmenu h1 {
@@ -27,8 +31,7 @@
   align-items: center;
   justify-content: center;
   position: relative;
-  font-family: "Antic Didone", serif;
-  color: white;
+ font-family: "Oswald", sans-serif;  color: white;
 }
 .navbarmenu a{ 
   text-decoration:none;
@@ -38,8 +41,10 @@
   align-items: left;
   justify-content: left;
   position: relative;
-  font-family: "Antic Didone", serif;
-  color: #0F1020;
+ font-family: "Oswald", sans-serif;  
+ color: #023047;
+ right: -2rem; 
+bottom: -2rem;
 }
 
 .overlay a {
@@ -52,7 +57,7 @@
 }
 
 .overlay a:hover{
-  color: #A8B4E9;
+  color: #CFE2EB;
 }
 .overlay .closebtn {
   position: absolute;
@@ -78,15 +83,15 @@
 }
 
 .herosection {
-  color: #0F1020;
+  color: #023047;
   display: flex;
   align-items: center; 
   justify-content: center; 
   margin: 0 auto 2rem; 
   padding: 5rem ;
-  color: #0F1020;
-  font-family: "Antic Didone", serif;
-  padding-left: 4rem; 
+  color: #023047;
+ font-family: "Oswald", sans-serif;  
+ padding-left: 4rem; 
   margin:50px;
 
 }
@@ -99,6 +104,7 @@
 
 .herosection h1 {
   font-size: 3rem; 
+   font-family: "Oswald", sans-serif; 
 }
 .herosection img, .herosection h1 {
   flex: 1;
@@ -116,7 +122,7 @@
 
 @media screen and (max-width: 600px) {
   .herosection {
-    padding: 3rem 1rem; /* Reduced padding for smaller screens */
+    padding: 3rem 1rem; 
   }
 }
 @media screen and (max-width:1000px) {
@@ -136,54 +142,59 @@
   }
 
 }
-   details {
-        padding: 20px; /* Adds padding inside each <details> */
-        margin-bottom: 20px; /* Adds space between each <details> */
-        border: 1px solid #0F1020; /* Optional: adds a border */
-		box-shadow: 0.3125rem 0.625rem #0F1020; 
-  border-style: solid;
-  border-width: medium;
-    }
 
-    summary {
+ summary {
         font-size: 2em; 
         font-weight: bold; 
         margin: -20px; 
         padding: 20px; 
-		  font-family: "Antic Didone", serif;
+		font-family: "Oswald", sans-serif; 
+		background-color:#CFE2EB;  
+		}
 
-    }
 
-    /* Adjusts the padding for <p> to align text properly within the padded <details> */
-    details > p {
-        margin: 20px 0; /* Adds margin on top and bottom of <p> */
-        padding: 0 20px; /* Adds padding on the sides of <p> */
-    }
-	
-   details {
-        padding: 20px; /* Adds padding inside each <details> */
-        margin-bottom: 20px; /* Adds space between each <details> */
-        border: 1px solid #0F1020; /* Optional: adds a border */
-		box-shadow: 0.3125rem 0.625rem #0F1020; 
-  border-style: solid;
-  border-width: medium;
-    font-family: "IBM Plex Sans", sans-serif;
+details {
+    padding: 20px;
+    margin: 20px; 
+    border: 1px solid #023047;
+    box-shadow: 0.3125rem 0.625rem #023047;
+    border-style: solid;
+    border-width: medium;
+    font-family: "Montserrat", sans-serif;
+}
 
-    }
-	
-	    table {
-        width: 100%;
-        border-collapse: collapse;
-        margin: 20px 0;
-    }
-    th, td {
-        padding: 10px;
-        border: 0px solid #0F1020;
-        text-align: left;
-    }
-    th {
-        background-color: #A8B4E9;
-    }
+table {
+    border-collapse: collapse;
+    margin: 30px 5px; 
+    box-shadow: 2px 4px #023047;
+    font-family: "Montserrat", sans-serif;
+    display: block;
+    width: auto;
+}
+
+th, td {
+    padding: 10px 15px;
+    border-style: solid;
+    border-width: medium;
+    color: #023047;
+    font-size: 20px;
+    text-align: left;
+}
+
+th {
+    background-color: #CFE2EB;
+}
+
+td {
+    background-color: #fdfdfd;
+    text-decoration: none;
+}
+
+thead th {
+    text-align: center;
+    font-weight: bold;
+}
+
 
     .resource-name {
         font-weight: bold;
@@ -200,14 +211,19 @@ section {
   height: 300vh; 
 }
 
+.communitytext{
+		font-family: "Montserrat", sans-serif;  
+  font-size: 1.25rem; 
+}
+
 footer {
   text-align: center;
   padding: 5px;
-  background-color: #0F1020;
+  background-color: #023047;
   color: white;
-  font-family: "IBM Plex Sans", sans-serif;
-  font-size: 1.25rem;
+  font-size: 1.5rem;
   font-weight:500;
+  font-family: "Oswald", sans-serif; 
 }
 
 footer a {
