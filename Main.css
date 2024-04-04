@@ -223,12 +223,6 @@ a.quizbutton:hover span:after {
 	font-weight: bold;
 }
 
-.factcard ul {
-    position: absolute; /* Positions the ul relative to its first positioned (not static) ancestor element */
-    bottom: 10px; /* Positions the ul at the bottom of the .factcard */
-    font-size: 0.8em; /* Makes the text smaller */
-	color:white;
-}
 
 .explore{
   font-family: "Oswald", sans-serif;	text-align: center;
@@ -287,8 +281,8 @@ box-shadow: 2.5px 5px #023047;
 }
 @media screen and (min-width:1000px){
 .content-block{
-	flex: 1 1 auto; /* Flex-grow, flex-shrink, flex-basis */
-  max-width: calc(70% - 5rem); /* Adjust max-width as needed, accounting for any gap */
+	flex: 1 1 auto; 
+  max-width: calc(70% - 5rem); 
 }
 .content-block:nth-child(odd) .picture {
   order: 1;
