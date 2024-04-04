@@ -1,69 +1,67 @@
 <!DOCTYPE html>
 <html>
 <head>
+<!-- Character set and viewport for responsive design -->
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+<!-- Title and external resources -->
 <title>About</title>
 <link rel="stylesheet" href="StylingSheets/About.css">
 <script src="Javascript/MainJava.js"></script>
 
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="anonymous">
-<link href="https://fonts.googleapis.com/css2?family=Antic+Didone&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Shrikhand&display=swap" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
-
+<!-- Google Fonts preconnect and stylesheet links -->
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
-
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 </head>
 
 <body>
+<!-- Main content area -->
 <main>
 
+<!-- Hero section and navigation overlay -->
 <div class="topherosectionpage">
-<div id="myNav" class="overlay">
+    <div id="myNav" class="overlay">
+        <!-- Close button for the overlay navigation -->
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()" aria-label="Close navigation menu">&times;</a>
+        <!-- Navigation links inside the overlay -->
+        <div class="overlay-content">
+            <a href="index.html">Home</a>
+			<a href="about.html">About</a>
+            <a href="ehealthliteracy.html">What is eHealth Literacy?</a>
+            <a href="onlinemanifesto.html">Navigating Resources Online</a>
+            <a href="healthhub.html">Student Health Hub</a>
+        </div>
+    </div>
+    <div id="navbar">
+        <!-- Menu icon and site title -->
+        <div class="navbarmenu">
+            <span onclick="openNav()"><img src="Images/menuicon.svg" alt="Menu" style="width: 30px; height: 30px; cursor: pointer;"></span>
+            <a href="index.html"><h1>WebWellness</h1></a>
+        </div>
+    </div>
+</div>
 
-<!-- Button to close the overlay navigation -->
-<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-
-<!-- Overlay content -->
-<div class="overlay-content">
-        <a href="index.html">Home</a>
-        <a href="ehealthliteracy.html">What is e-Health Literacy?</a>
-        <a href="onlinemanifesto.html">Navigating Resources Online</a>
-        <a href="healthhub.html">Student Health Hub</a>
-		<a href="about.html">About</a>
-</div>
-</div>
-<div id="navbar">
-<div class="navbarmenu">
-    <span onclick="openNav()"><img src="Images/menuicon.svg" alt="Menu" style="width: 30px; height: 30px; cursor: pointer;"></span>
-<a href="index.html"><h1>WebWellness</h1></a>
-</div>
-</div>
-</div>
-
+<!-- About section with a hero image and mission statement -->
 <div class="herosection">
-<img class="coverimg" src="Images/coverimg.png" alt="Navigating Information Online" style="width:100%">
-<div class="herosectiontext">
-<h1>About</h1>
-<p>Our mission is to empower individuals regarding their health and seek health information online in a way that does not result in a bottomless pit of fear. Online searches for answers may yield either comfortable or alarming information, often the latter. Our goal is to help people find themselves trapped in a cycle of worry, rationalize their fears, and effectively navigate the wealth of health information online.</p>
-</div>
+    <img class="coverimg" src="Images/herosectionabt.png" alt="A smartphone with a lengthy prescription document emerging from the screen" style="width:100%">
+    <div class="herosectiontext">
+        <h1>About</h1>
+        <p>Our mission is to guide individuals in the search for health information online, providing a source of comfort rather than alarm. We are dedicated to empowering you with the tools and knowledge to assess the quality of information, avoiding the pitfalls of fear and anxiety. Our commitment is to help you break the cycle of health-related worry, enabling you to engage with online health content in a rational and effective manner. </p> 
+    </div>
 </div>
 
-
+<!-- Footer with additional links -->
 <footer>
-<a href="index.html">Home</a>
-<a href="ehealthliteracy.html">What is e-Health Literacy?</a>
-<a href="onlinemanifesto.html">Navigating Resources Online</a>
-<a href="healthhub.html">Student Health Hub</a>
-<a href="about.html">About</a>
-
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="ehealthliteracy.html">What is eHealth Literacy?</a>
+    <a href="onlinemanifesto.html">Navigating Resources Online</a>
+    <a href="healthhub.html">Student Health Hub</a>
 </footer>
 </body>
 </html>

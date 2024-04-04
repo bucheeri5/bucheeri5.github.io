@@ -1,11 +1,11 @@
 body{
-	font-family: "IBM Plex Sans", sans-serif;   
-	font-weight: 400;
+	color:#023047;
+	margin: 0;
+	
 }
 
-
 .topherosectionpage{
-	background-color:#0F1020;
+	background-color:#023047;
 	padding:10px;
 }
 .overlay {
@@ -15,7 +15,7 @@ body{
     z-index: 1;
     top: 0;
     left: 0;
-    background-color: #0F1020;
+    background-color: #023047;
     overflow-x: hidden;
     transition: 0.5s;
 }
@@ -25,7 +25,7 @@ body{
 	width: 100%; 
 	text-align: center; 
 	margin-top: 30px; 
-	font-family: "IBM Plex Sans", sans-serif;  
+  font-family: "Oswald", sans-serif; 
 	font-weight: 400;
 }
  .navbarmenu h1 {
@@ -33,8 +33,7 @@ body{
   align-items: center;
   justify-content: center;
   position: relative;
-  font-family: "Antic Didone", serif;
-  color: white;
+ font-family: "Oswald", sans-serif;  color: white;
 }
 .navbarmenu a{ 
   text-decoration:none;
@@ -44,8 +43,10 @@ body{
   align-items: left;
   justify-content: left;
   position: relative;
-  font-family: "Antic Didone", serif;
-  color: #0F1020;
+ font-family: "Oswald", sans-serif;  
+ color: #023047;
+ right: -2rem; 
+bottom: -2rem;
 }
 
 .overlay a {
@@ -58,7 +59,7 @@ body{
 }
 
 .overlay a:hover{
-  color: A8B4E9;
+  color: CFE2EB;
 }
 .overlay .closebtn {
   position: absolute;
@@ -83,18 +84,18 @@ body{
     right: 35px;
   }
 }
-
-
+.text-yellow{
+ color:#FB8500;
+}
 .herosection {
-  color: #0F1020;
+  color: #023047;
   display: flex;
   align-items: center; 
   justify-content: center; 
   margin: 0 auto 2rem; 
   padding: 5rem ;
-  color: #0F1020;
-  font-family: "Antic Didone", serif;
-  padding-left: 4rem; 
+  color: #023047;
+ font-family: "Oswald", sans-serif;  padding-left: 4rem; 
   margin:50px;
 
 }
@@ -107,6 +108,7 @@ body{
 
 .herosection h1 {
   font-size: 3rem; 
+   font-family: "Oswald", sans-serif; 
 }
 .herosection img, .herosection h1 {
   flex: 1;
@@ -147,22 +149,21 @@ body{
 
 
 a.quizbutton {
-  border: 2px solid #0F1020;
-  color: #0F1020;
-  background-color: #A8B4E9; 
+  border: 2px solid #023047;
+  color: #023047;
+  background-color: #CFE2EB; 
   text-align: center;
   font-size: 20px;
   padding: 22px;
   transition: all 0.5s;
   cursor: pointer;
-  box-shadow: 2px 4px #0F1020;
+  box-shadow: 2px 4px #023047;
   font-weight: bold; 
   text-decoration: none;
   border: 0; 
   width: fit-content; 
   align-items:center;
-  font-family: "IBM Plex Sans", sans-serif;  
-
+  font-family: "Montserrat", sans-serif;  
 }
 
 a.quizbutton span {
@@ -204,13 +205,13 @@ a.quizbutton:hover span:after {
   display: flex;
   flex-direction: column;
   align-items: center; 
-  background-color:#A8B4E9;
-  box-shadow: 5px 10px #0F1020;
+  background-color:#CFE2EB;
+  box-shadow: 5px 10px #023047;
   font-size: 25px;
-  font-family: "IBM Plex Sans", sans-serif;  
+  font-family: "Montserrat", sans-serif;  
   font-weight: 400;	
   margin-top: 12px;
-  color:#0F1020;
+  color:#023047;
   text-align:center;
 }
 
@@ -219,7 +220,7 @@ a.quizbutton:hover span:after {
 }
 
 .factcard span{
-	text-decoration: underline;
+	font-weight: bold;
 }
 
 .factcard ul {
@@ -230,21 +231,20 @@ a.quizbutton:hover span:after {
 }
 
 .explore{
-	font-family: "Antic Didone", serif;
-	text-align: center;
+  font-family: "Oswald", sans-serif;	text-align: center;
 	margin-top: 70px;
-	  color:#0F1020;
+	  color:#023047;
 	font-size:2rem;
 }
 
 
 .content-block {
-  color: #0F1020;
+  color: #023047;
   display: flex;
   align-items: center; 
   justify-content: center; 
   margin: 0 auto 2rem; 
-  font-family: "IBM Plex Sans", sans-serif;  
+  font-family: "Montserrat", sans-serif;  
   font-weight: 400;
   max-width: 70rem; 
   font-size:20px;
@@ -254,8 +254,7 @@ a.quizbutton:hover span:after {
 }
 
 .text h2 {
-  font-family: "Antic Didone", serif;
-}
+ font-family: "Oswald", sans-serif;}
 .picture img {
   width: 100%;
   max-width: 400px;
@@ -268,7 +267,7 @@ a.quizbutton:hover span:after {
 }
 
 .morebutton { 
- background: #A8B4E9; 
+ background-color: #CFE2EB; 
  box-sizing: border-box; 
  color: #FFFFFF; 
  font-size: 20px; 
@@ -278,17 +277,15 @@ a.quizbutton:hover span:after {
  width: fit-content; 
  word-break: break-word; 
  border: 0; 
- font-family: "Antic Didone", serif;
- box-shadow: 2px 4px #0F1020;
+  font-family: "Oswald", sans-serif;box-shadow: 2px 4px #023047;
  font-weight: bold; 
 }
-
-.morebutton:hover a {
-    color: red;
+.morebutton:hover, .morebutton:focus {
+  background-color: #81B8D1;
 }
 .morebutton a{
   text-decoration: none;
-  color: #0F1020; 
+  color: #023047; 
 }
 @media screen and (min-width:1000px){
 .content-block{
@@ -360,13 +357,12 @@ a.quizbutton:hover span:after {
 footer {
   text-align: center;
   padding: 5px;
-  background-color: #0F1020;
+  background-color: #023047;
   color: white;
-  font-family: "IBM Plex Sans", sans-serif;
-  font-size: 1.25rem;
+  font-size: 1.5rem;
   font-weight:500;
+  font-family: "Oswald", sans-serif; 
 }
-
 footer a {
   color: white;
   text-decoration: none;

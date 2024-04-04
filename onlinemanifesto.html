@@ -1,45 +1,49 @@
 <!DOCTYPE html>
 <html>
 <head>
+<!-- Standard meta tags required for responsive design and setting character encoding -->
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+<!-- Title of the webpage -->
 <title>Manifesto</title>
+
+<!-- Link to the external CSS file that styles the page -->
 <link rel="stylesheet" href="StylingSheets/onlinemanifesto.css">
+
+<!-- Link to the main JavaScript file that contains the functionality -->
 <script src="Javascript/MainJava.js"></script>
 
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="anonymous">
-<link href="https://fonts.googleapis.com/css2?family=Antic+Didone&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Shrikhand&display=swap" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
-
+<!-- Preconnect to Google's font API for performance improvement -->
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
 
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+<!-- Links to Google Fonts for custom fonts used in the page -->
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 </head>
 
 <body>
 <main>
 
+<!-- Section containing the top part of the hero section of the page -->
 <div class="topherosectionpage">
 <div id="myNav" class="overlay">
 
-<!-- Button to close the overlay navigation -->
-<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+<!-- Button that when clicked, will call the JavaScript function to close the overlay navigation -->
+<a href="javascript:void(0)" class="closebtn" onclick="closeNav()" aria-label="Close navigation menu">&times;</a>
 
-<!-- Overlay content -->
+<!-- Content of the overlay navigation menu -->
 <div class="overlay-content">
         <a href="index.html">Home</a>
-        <a href="ehealthliteracy.html">What is e-Health Literacy?</a>
+		<a href="about.html">About</a>
+        <a href="ehealthliteracy.html">What is eHealth Literacy?</a>
         <a href="onlinemanifesto.html">Navigating Resources Online</a>
         <a href="healthhub.html">Student Health Hub</a>
-		<a href="about.html">About</a>
 </div>
 </div>
+
+<!-- Navigation bar that contains the menu icon and site title -->
 <div id="navbar">
 <div class="navbarmenu">
     <span onclick="openNav()"><img src="Images/menuicon.svg" alt="Menu" style="width: 30px; height: 30px; cursor: pointer;"></span>
@@ -48,105 +52,110 @@
 </div>
 </div>
 
-
-
+<!-- Hero section that contains the main heading and introduction text -->
 <div class="herosection">
-<img class="coverimg" src="Images/stepguide.png" alt="Navigating Information Online" style="width:100%">
+<img class="coverimg" src="Images/stepguide.png" alt="An illustration of a smartphone displaying an multiple notifications of a calendar icon with a medical cross. " style="width:100%">
 <div class="herosectiontext">
+
+<!-- Heading for the page's main topic -->
 <h1>Navigating Health Information Online: Step-by-Step Guide</h1>
-<p>In this section, we put together a guide to ensure that people are equipped to search for health information online confidently.
-</p>
+
+<!-- Brief description about the content of the page -->
+<p> Time to avoid falling victim to health misinformation: This section covers a guide to searching for health information online confidently!</p>
 </div>
 </div>
 
-
+<!-- Content block representing the first step of the guide -->
 <div class="contentblock" id="step1">
 <div class="picture">
-<img src="Images/step01.png" alt="Protecting Health Information" style="width:100%">
+<img src="Images/step01.png" alt="An illustration of a phone screen with a doctor's arms extending out of it, holding a stethoscope" style="width:100%">
 </div>
 
 <div class="text">
     <h1>Step 01: Identify Your Health Information Needs</h1>
 <p>Begin by clearly defining <span class="bold-text">what health information you are looking for</span>. This will help you target your search more effectively. Whether it's <span class="bold-text">understanding symptoms, learning about treatments, or exploring preventive measures,</span> knowing your specific needs is the first step in finding credible health information.</p>
-</div>
-  <button class="scrollButton" onclick="scrollToNext('step2')">Next &darr;</button>
+  <a href="#step2" class="scrollButton">Next</a>
 
+</div>
 </div>
 
 <div class="contentblock" id="step2">
 <div class="picture">
-<img src="Images/step02.png" alt="Protecting Health Information" style="width:100%">
+<img src="Images/step02.png" alt="Illustration of a hand holding a medical kit, with the kit positioned above a smartphone." style="width:100%">
 </div>
 
 <div class="text">
     <h1>Step 02: Use Reputable Sources</h1>
-<p>Seek information from reputable sources such as <span class="bold-text">government health websites</span> and <span class="bold-text">peer-reviewed journals</span>. Websites with urls ending in <span class="bold-text">.gov, and .org</span>are often more reliable. <span class="bold-text">When in doubt refer to the <a href="https://www.nhsinform.scot/">NHSInform</a></span>. Finding credible sources is crucial for accurate health information. You can read on how to evaluate on our page on <a href="ehealthliteracy.html">e-health literacy</a>. </p>
+<p>Seek information from reputable sources such as <span class="bold-text">government health websites</span> and <span class="bold-text">peer-reviewed journals</span>. Websites with urls ending in <span class="bold-text">.gov, and .org</span>are often more reliable. When in doubt refer to the <a href="https://www.nhsinform.scot/">NHSInform</a>. Finding credible sources is crucial for accurate health information. You can read on how to evaluate on our page on <a href="ehealthliteracy.html">eHealth literacy</a>. </p>
+  <a href="#step3" class="scrollButton">Next</a>
+
 </div>
-  <button class="scrollButton" onclick="scrollToNext('step3')">Next &darr;</button>
+
+</div>
+
+
+<div class="contentblock" id="step3">
+<div class="picture">
+<img src="Images/step03.png" alt="Illustration of a computer screen with a webpage that has the medical cross" style="width:100%">
+</div>
+
+<div class="text">
+    <h1>Step 03: Cross-Check Information</h1>
+<p>Assess the credibility of the information source. Check the <span class="bold-text">qualifications of the authors</span>, the <span class="bold-text">date of the information</span>, and whether the source <span class="bold-text">cites reputable evidence</span>. Reliable sources typically have a rigorous editorial process and are transparent about their review methods.</p>
+  <a href="#step4" class="scrollButton">Next</a>
+
+</div>
 
 </div>
 
 
 <div class="contentblock" id="step4">
 <div class="picture">
-<img src="Images/step04.png" alt="Protecting Health Information" style="width:100%">
-</div>
-
-<div class="text">
-    <h1>Step 03: Cross-Check Information</h1>
-<p>Assess the credibility of the information source. Check the <span class="bold-text">qualifications of the authors</span>, the <span class="bold-text">date of the information</span>, and whether the source <span class="bold-text">cites reputable evidence</span>. Reliable sources typically have a rigorous editorial process and are transparent about their review methods.</p>
-</div>
-  <button class="scrollButton" onclick="scrollToNext('step5')">Next &darr;</button>
-
-</div>
-
-
-<div class="contentblock" id="step5">
-<div class="picture">
-<img src="Images/step05.png" alt="Protecting Health Information" style="width:100%">
+<img src="Images/step04.png" alt="An illustration of a hand emerging from a smartphone screen displaying “Miracle Cure,” and holding a bottle against a backdrop of a medical cross. " style="width:100%">
 </div>
 
 <div class="text">
     <h1>Step 04: Be Wary of Red Flags</h1>
-<p>Exercise caution and look out for red flags such as <span class="bold-text">unrealistic headlines</span>, <span class="bold-text">lack of author names</span>, or <span class="bold-text">unsupported claims</span>. Be skeptical of sources that <span class="bold-text">rely heavily on anecdotal evidence</span> or that promote <span class="bold-text">"miracle cures"</span>. Reliable health information should be <span class="bold-text">balanced</span>, <span class="bold-text">evidence-based</span>, and <span class="bold-text">free from commercial bias</span>.</p>
-</div>
-  <button class="scrollButton" onclick="scrollToNext('step6')">Next &darr;</button>
+<p>Exercise caution and look out for red flags such as <span class="bold-text">unrealistic headlines</span>, <span class="bold-text">lack of author names</span>, or <span class="bold-text">unsupported claims</span>. Be skeptical of sources that <span class="bold-text">rely heavily on anecdotal evidence</span> or that promote <span class="bold-text">"miracle cures"</span>. No, <a href="https://right.ly/our-views-and-opinions/its-a-miracle/">"Miracle Mineral Solution (MMS)"</a> will not cure you. Reliable health information should be <span class="bold-text">balanced</span>, <span class="bold-text">evidence-based</span>, and <span class="bold-text">free from commercial bias</span>.</p>
+  <a href="#step5" class="scrollButton">Next</a>
 
 </div>
 
-<div class="contentblock" id="step6">
+</div>
+
+<div class="contentblock" id="step5">
 <div class="picture">
-<img src="Images/step06.png" alt="Protecting Health Information" style="width:100%">
+<img src="Images/step05.png" alt="An illustration of a smartphone with a chat icon icon popping out of the screen, featuring a medical cross" style="width:100%">
 </div>
 
 <div class="text">
     <h1>Step 05: Consider Privacy and Security</h1>
 <p>When seeking health information or sharing personal health data online, consider the privacy and security of websites. Use <span class="bold-text">secure, reputable sites,</span> especially when providing personal health details or engaging in health-related discussions. Check the website’s privacy policy to understand <span class="bold-text">how your information will be used</span>.</p>
+<a href="#step6" class="scrollButton">Next</a>
 </div>
-  <button class="scrollButton" onclick="scrollToNext('step7')">Next &darr;</button>
+  
 
 </div>
 
-<div class="contentblock" id="step7">
+<div class="contentblock" id="step6">
 <div class="picture">
-<img src="Images/step07.png" alt="An image of a screen stating "see a physician"" style="width:100%">
+<img src="Images/step06.png" alt="An illustration of a screen stating "see a physician"" style="width:100%">
 </div>
 
 <div class="text">
     <h1>Step 06: Consult Healthcare Professionals</h1>
-<p>Finally, if need be, <span class="bold-text">consult healthcare professionals</span> to interpret the information you find. Doctors, nurses, and other healthcare specialists can provide personalized advice, clarify complex information, and help you apply it to your specific situation. <span class="bold-text">Always consider professional consultation for diagnoses, treatment options, and health decisions</span>.</p>
-</div>
-  <button class="scrollButton" onclick="scrollToNext('footer')">Next &darr;</button>
-
+<p>Finally, if need be, <span class="bold-text">consult healthcare professionals</span> to interpret the information you find. Doctors, nurses, and other healthcare specialists can provide personalized advice, clarify complex information, and help you apply it to your specific situation. <span class="bold-text">Always consider professional consultation for diagnoses, treatment options, and health decisions</span>. Call NHS 24 at 111 or contact your GP Practice.</p>
 </div>
 
+</div>
+
+<!-- The footer of the page, containing links to other pages of the website -->
 <footer>
 <a href="index.html">Home</a>
-<a href="ehealthliteracy.html">What is e-Health Literacy?</a>
+<a href="about.html">About</a>
+<a href="ehealthliteracy.html">What is eHealth Literacy?</a>
 <a href="onlinemanifesto.html">Navigating Resources Online</a>
 <a href="healthhub.html">Student Health Hub</a>
-<a href="about.html">About</a>
-
 </footer>
 </body>
 </html>
