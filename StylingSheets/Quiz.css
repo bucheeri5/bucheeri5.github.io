@@ -97,6 +97,13 @@ bottom: -2rem;
     content: "  Wrong answer, try again!";
     color: red;
 }
+.correct-answer {
+    background-color: lightgreen;
+}
+
+.wrong-answer {
+    background-color: lightcoral;
+}
 
 .quiz-container {
     padding: 20px;
