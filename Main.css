@@ -262,8 +262,10 @@ a.quizbutton:hover span:after {
 
 .morebutton { 
 box-shadow: 2.5px 5px #023047;
+border-color:#023047;
   border-style: solid;
-  border-width: medium; box-sizing: border-box; 
+  border-width: medium; 
+  box-sizing: border-box; 
  font-size: 1.4rem; 
  opacity: 1; 
  outline: 0 solid transparent; 
@@ -271,6 +273,7 @@ box-shadow: 2.5px 5px #023047;
  width: fit-content; 
   font-family: "Oswald", sans-serif;
  font-weight: bold; 
+ background-color:white;
 }
 .morebutton:hover, .morebutton:focus {
   background-color: #81B8D1;
