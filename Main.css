@@ -59,7 +59,7 @@ bottom: -2rem;
 }
 
 .overlay a:hover{
-  color: CFE2EB;
+  color: #219ebc;
 }
 .overlay .closebtn {
   position: absolute;
@@ -267,17 +267,15 @@ a.quizbutton:hover span:after {
 }
 
 .morebutton { 
- background-color: #CFE2EB; 
- box-sizing: border-box; 
- color: #FFFFFF; 
- font-size: 20px; 
+box-shadow: 2.5px 5px #023047;
+  border-style: solid;
+  border-width: medium; box-sizing: border-box; 
+ font-size: 1.4rem; 
  opacity: 1; 
  outline: 0 solid transparent; 
  padding: 8px 18px; 
  width: fit-content; 
- word-break: break-word; 
- border: 0; 
-  font-family: "Oswald", sans-serif;box-shadow: 2px 4px #023047;
+  font-family: "Oswald", sans-serif;
  font-weight: bold; 
 }
 .morebutton:hover, .morebutton:focus {
@@ -370,6 +368,9 @@ footer a {
   padding: 5px;
 }
 
+footer a:hover{
+	  background-color: #0E4C5F;
+}
 @media screen and (max-width: 600px) {
   footer {
     padding: 20px; 
